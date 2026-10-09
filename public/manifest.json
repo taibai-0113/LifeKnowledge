@@ -1,0 +1,16 @@
+{
+  "name": "人生常识 — 成年人的生活常识系统",
+  "short_name": "人生常识",
+  "description": "把没人系统教过你的生活常识补起来",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfbfa",
+  "theme_color": "#fbfbfa",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

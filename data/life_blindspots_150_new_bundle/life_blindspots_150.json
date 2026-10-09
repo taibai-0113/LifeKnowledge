@@ -1,0 +1,6736 @@
+{
+  "schema_version": "V3-content-schema-1.0",
+  "dataset_id": "life_blindspots_150",
+  "title": "人生常识｜扫清生活盲区 150条初始知识库",
+  "language": "zh-CN",
+  "module": "blindspot",
+  "generated_at": "2026-10-08",
+  "intended_status": "draft_for_editorial_review",
+  "methodology": {
+    "reference": "高性价比人生指南：用于选题与“行动/误区/高性价比”的方法论参考。",
+    "how_everything_works": "用于“从日常物件/现象追问为什么”的选题方法参考；新增内容没有复制其原文。",
+    "source_policy": "优先官方机构、专业组织、同行评议文献；对机制型条目可使用可靠科普/解释型来源作辅助，正式上线前应由编辑核验。",
+    "dedup_policy": "每条记录以独立 Concept 为单位；相关知识通过 related_concept_ids 建立关联。后续可在数据库中进一步聚合为 Concept Cluster。"
+  },
+  "source_index": [
+    {
+      "id": "S001",
+      "name": "高性价比人生指南",
+      "type": "reference",
+      "url": "https://cdyforever.github.io/how-to-live-better/",
+      "note": "内容结构与选题方向参考，不作为新增事实的唯一证据。"
+    },
+    {
+      "id": "S002",
+      "name": "How Everything Works",
+      "type": "explanatory_secondary",
+      "url": "https://howeverythingworks.org/welcome-to-how-everything-works/",
+      "note": "用于‘从日常物件理解科学’的选题方法与表达风格参考。"
+    },
+    {
+      "id": "S003",
+      "name": "How Everything Works Topics",
+      "type": "explanatory_secondary",
+      "url": "https://www.howeverythingworks.org/topics.html",
+      "note": "日常物理、机械、电学、热学等选题参考。"
+    },
+    {
+      "id": "S004",
+      "name": "HowStuffWorks — How Refrigerators Work",
+      "type": "explanatory_secondary",
+      "url": "https://home.howstuffworks.com/refrigerator.htm"
+    },
+    {
+      "id": "S005",
+      "name": "FDA — Science and Our Food Supply: Food Safety A to Z",
+      "type": "official",
+      "url": "https://www.fda.gov/downloads/food/foodscienceresearch/toolsmaterials/ucm430363.pdf"
+    },
+    {
+      "id": "S006",
+      "name": "FDA — Science and Our Food Supply",
+      "type": "official",
+      "url": "https://www.fda.gov/downloads/Food/FoodScienceResearch/ToolsMaterials/UCM430366.pdf"
+    },
+    {
+      "id": "S007",
+      "name": "USDA FSIS — Keep Food Safe",
+      "type": "official",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/steps-keep-food-safe"
+    },
+    {
+      "id": "S008",
+      "name": "USDA FSIS — Shelf-Stable Food Safety",
+      "type": "official",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/shelf-stable-food"
+    },
+    {
+      "id": "S009",
+      "name": "USDA FSIS — Molds on Food: Are They Dangerous?",
+      "type": "official",
+      "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/molds-food-are-they-dangerous"
+    },
+    {
+      "id": "S010",
+      "name": "FDA — Use of the Term Natural on Food Labeling",
+      "type": "official",
+      "url": "https://www.fda.gov/food/food-labeling-nutrition/use-term-natural-food-labeling"
+    },
+    {
+      "id": "S011",
+      "name": "FDA — Organic on Food Labels",
+      "type": "official",
+      "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/organic-food-labels"
+    },
+    {
+      "id": "S012",
+      "name": "FDA — Serving Size on Nutrition Facts Label",
+      "type": "official",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/serving-size-nutrition-facts-label"
+    },
+    {
+      "id": "S013",
+      "name": "FDA — Added Sugars on Nutrition Facts Label",
+      "type": "official",
+      "url": "https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label"
+    },
+    {
+      "id": "S014",
+      "name": "Harvard T.H. Chan — Carbohydrates and Blood Sugar",
+      "type": "academic_education",
+      "url": "https://nutritionsource.hsph.harvard.edu/carbohydrates/carbohydrates-and-blood-sugar/"
+    },
+    {
+      "id": "S015",
+      "name": "PubMed — 8x8 water review",
+      "type": "peer_reviewed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12376390/"
+    },
+    {
+      "id": "S016",
+      "name": "CDC — About Handwashing",
+      "type": "official",
+      "url": "https://www.cdc.gov/clean-hands/about/index.html"
+    },
+    {
+      "id": "S017",
+      "name": "CDC — Adult Physical Activity",
+      "type": "official",
+      "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"
+    },
+    {
+      "id": "S018",
+      "name": "CDC — Antibiotics Do Not Treat Viruses",
+      "type": "official",
+      "url": "https://www.cdc.gov/antibiotic-use/communication-resources/wrong-tool-for-virus.html"
+    },
+    {
+      "id": "S019",
+      "name": "NCCIH — The Common Cold and Complementary Health Approaches",
+      "type": "official",
+      "url": "https://www.nccih.nih.gov/health/providers/digest/the-common-cold-and-complementary-health-approaches-science"
+    },
+    {
+      "id": "S020",
+      "name": "NHLBI — Insomnia Treatment / Sleep Habits",
+      "type": "official",
+      "url": "https://www.nhlbi.nih.gov/health/insomnia/treatment"
+    },
+    {
+      "id": "S021",
+      "name": "PubMed Central — Caffeine and Sleep",
+      "type": "peer_reviewed",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3805807/"
+    },
+    {
+      "id": "S022",
+      "name": "NIDCR — Oral Hygiene",
+      "type": "official",
+      "url": "https://www.nidcr.nih.gov/health-info/oral-hygiene"
+    },
+    {
+      "id": "S023",
+      "name": "ADA — Whitening",
+      "type": "professional_org",
+      "url": "https://www.ada.org/resources/ada-library/oral-health-topics/whitening"
+    },
+    {
+      "id": "S024",
+      "name": "EPA — Cleaning Products and Indoor Air",
+      "type": "official",
+      "url": "https://www.epa.gov/indoor-air-quality-iaq/biological-contaminants-and-indoor-air-quality"
+    },
+    {
+      "id": "S025",
+      "name": "EPA — Guide to Air Cleaners in the Home",
+      "type": "official",
+      "url": "https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home"
+    },
+    {
+      "id": "S026",
+      "name": "EPA — What is a HEPA Filter?",
+      "type": "official",
+      "url": "https://www.epa.gov/indoor-air-quality-iaq/what-hepa-filter"
+    },
+    {
+      "id": "S027",
+      "name": "CPSC — Carbon Monoxide Safety",
+      "type": "official",
+      "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center"
+    },
+    {
+      "id": "S028",
+      "name": "CPSC — Carbon Monoxide Prevention",
+      "type": "official",
+      "url": "https://www.cpsc.gov/safety-education/safety-education-centers/carbon-monoxide-information-center/protect-your-family-from-carbon-monoxide-poisoning--"
+    },
+    {
+      "id": "S029",
+      "name": "CPSC — Indoor Air Quality",
+      "type": "official",
+      "url": "https://www.cpsc.gov/Safety-Education/Safety-Guides/Home/The-Inside-Story-A-Guide-to-Indoor-Air-Quality"
+    },
+    {
+      "id": "S030",
+      "name": "CPSC — Smoke and CO Alarm guidance",
+      "type": "official",
+      "url": "https://www.cpsc.gov/Newsroom/News-Releases/2006/Check-Smoke-and-CO-Alarms-This-Weekend-as-Daylight-Saving-Time-Begins"
+    },
+    {
+      "id": "S031",
+      "name": "DOE — Induction Cooking",
+      "type": "official",
+      "url": "https://www.energy.gov/articles/making-switch-induction-stoves-or-cooktops"
+    },
+    {
+      "id": "S032",
+      "name": "FTC — Free Trials and Auto-Renewals",
+      "type": "official",
+      "url": "https://consumer.ftc.gov/articles/getting-and-out-free-trials-auto-renewals-and-negative-option-subscriptions"
+    },
+    {
+      "id": "S033",
+      "name": "FTC — Dark Patterns",
+      "type": "official",
+      "url": "https://consumer.ftc.gov/consumer-alerts/2022/09/how-companies-manipulate-you-online-what-ftc-doing-protect-you"
+    },
+    {
+      "id": "S034",
+      "name": "FTC — Fake Reviews",
+      "type": "official",
+      "url": "https://consumer.ftc.gov/articles/how-evaluate-online-reviews"
+    },
+    {
+      "id": "S035",
+      "name": "FTC — Online Shopping",
+      "type": "official",
+      "url": "https://consumer.ftc.gov/articles/online-shopping"
+    },
+    {
+      "id": "S036",
+      "name": "CFPB — Credit Card Interest",
+      "type": "official",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-does-my-credit-card-company-calculate-the-amount-of-interest-i-owe-en-51/"
+    },
+    {
+      "id": "S037",
+      "name": "NHTSA — Vehicle Safety Features",
+      "type": "official",
+      "url": "https://static.nhtsa.gov/odi/inv/2022/INRD-PE22003-13199.pdf"
+    },
+    {
+      "id": "S038",
+      "name": "NHTSA — Tire Safety",
+      "type": "official",
+      "url": "https://www.nhtsa.gov/equipment/tires"
+    },
+    {
+      "id": "S039",
+      "name": "How Everything Works — everyday topics",
+      "type": "explanatory_secondary",
+      "url": "https://www.howeverythingworks.org/topics.html"
+    },
+    {
+      "id": "S040",
+      "name": "GPS.gov — GPS System",
+      "type": "official",
+      "url": "https://www.gps.gov/systems/gps/"
+    },
+    {
+      "id": "S041",
+      "name": "CISA — Phishing",
+      "type": "official",
+      "url": "https://www.cisa.gov/topics/cyber-threats-and-advisories/what-is-phishing"
+    },
+    {
+      "id": "S042",
+      "name": "CISA — Multi-Factor Authentication",
+      "type": "official",
+      "url": "https://www.cisa.gov/topics/cyber-threats-and-advisories/multi-factor-authentication"
+    },
+    {
+      "id": "S043",
+      "name": "Ready.gov — Power Outages",
+      "type": "official",
+      "url": "https://www.ready.gov/power-outage"
+    },
+    {
+      "id": "S044",
+      "name": "DOE — LED Lighting",
+      "type": "official",
+      "url": "https://www.energy.gov/energysaver/led-lighting"
+    },
+    {
+      "id": "S045",
+      "name": "DOE — Heat Pump Systems",
+      "type": "official",
+      "url": "https://www.energy.gov/energysaver/heat-pump-systems"
+    },
+    {
+      "id": "S046",
+      "name": "FDA — Gluten and Food Labeling",
+      "type": "official",
+      "url": "https://www.fda.gov/food/nutrition-education-resources-materials/gluten-and-food-labeling"
+    }
+  ],
+  "cards": [
+    {
+      "id": "LB001",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB001",
+      "title": "罐头为什么能放很久？",
+      "domain": "food",
+      "angle": "explanation",
+      "one_line": "热处理 + 密封是商业罐藏长期保存的核心机制之一。",
+      "you_might_think": "“放几年不坏，主要靠防腐剂。”",
+      "reality": "适当热处理可降低微生物风险，密封则减少再次污染；不同产品的配方和工艺不同。",
+      "why": "长期保存可以通过控制微生物、温度、水分、酸度和再污染来实现，不只有防腐剂这一条路。",
+      "remember": "看到“保质期长”时，先问保存机制，不要自动等同于“防腐剂多”。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S005",
+        "S006",
+        "S008"
+      ],
+      "tags": [
+        "食品",
+        "罐头",
+        "食品保存"
+      ],
+      "related_concept_ids": [
+        "LB002",
+        "LB003",
+        "LB030",
+        "LB029"
+      ]
+    },
+    {
+      "id": "LB002",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB002",
+      "title": "未开封罐头为什么通常不用放冰箱？",
+      "domain": "food",
+      "angle": "explanation",
+      "one_line": "符合商业罐藏工艺的未开封罐头可在常温保存。",
+      "you_might_think": "“所有罐头都必须冷藏。”",
+      "reality": "商业罐藏食品的目标之一就是做成货架稳定产品；开封后再冷藏则是另一回事。",
+      "why": "保存稳定性来自处理和密封，而不是“冷藏之前先把它变安全”。",
+      "remember": "未开封与开封后的储存规则不同。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S008",
+        "S006"
+      ],
+      "tags": [
+        "罐头",
+        "冷藏",
+        "食品保存"
+      ],
+      "related_concept_ids": [
+        "LB003",
+        "LB001",
+        "LB030",
+        "LB029"
+      ]
+    },
+    {
+      "id": "LB003",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB003",
+      "title": "罐头开封后为什么要冷藏？",
+      "domain": "food",
+      "angle": "explanation",
+      "one_line": "开封破坏了原来的密封保护，微生物就重新获得了进入和生长的机会。",
+      "you_might_think": "“罐头开封后和没开封一样安全。”",
+      "reality": "开封后应按普通易腐食品处理，及时冷藏并尽快食用。",
+      "why": "保护机制的一部分是“隔绝再污染”；开封就打破了这个条件。",
+      "remember": "包装一打开，储存逻辑就变了。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S008",
+        "S007"
+      ],
+      "tags": [
+        "罐头",
+        "开封",
+        "冷藏"
+      ],
+      "related_concept_ids": [
+        "LB002",
+        "LB001",
+        "LB030",
+        "LB029"
+      ]
+    },
+    {
+      "id": "LB004",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB004",
+      "title": "“保质期长”不等于“加了很多防腐剂”",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "食品能久放，可能来自热处理、低水分、低温、酸度、密封等多种机制。",
+      "you_might_think": "“能保存很久的食品一定是防腐剂很多。”",
+      "reality": "食品保存是一整套技术体系，防腐剂只是其中一种工具。",
+      "why": "不同微生物对温度、水分活度、酸碱度和氧气的耐受不同。",
+      "remember": "先看食品的保存方式和标签，再判断添加剂。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S005",
+        "S006"
+      ],
+      "tags": [
+        "防腐剂",
+        "食品科技",
+        "添加剂"
+      ],
+      "related_concept_ids": [
+        "LB030",
+        "LB029",
+        "LB028",
+        "LB027"
+      ]
+    },
+    {
+      "id": "LB005",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB005",
+      "title": "食品包装上的“最佳食用期”不等于“当天过期就有毒”",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "日期标签可能涉及品质而不一定等同于瞬间变成不安全。",
+      "you_might_think": "“日期一到，食物马上产生毒性。”",
+      "reality": "不同国家和食品类别的日期制度不同；对货架稳定食品，日期往往与品质变化有关。",
+      "why": "风味、质地、营养品质和微生物安全不是完全同一个概念。",
+      "remember": "具体怎么处理要结合食品类型、是否开封、储存条件和当地标签法规。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S005",
+        "S006",
+        "S008"
+      ],
+      "tags": [
+        "保质期",
+        "日期标签"
+      ],
+      "related_concept_ids": [
+        "LB030",
+        "LB029",
+        "LB028",
+        "LB027"
+      ]
+    },
+    {
+      "id": "LB006",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB006",
+      "title": "冰箱不会“杀死所有细菌”",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "冰箱主要是降低温度、减慢许多微生物的生长，而不是把食品灭菌。",
+      "you_might_think": "“放进冰箱就不会坏。”",
+      "reality": "冷藏能延缓腐败，但并不能让食品无限期安全。",
+      "why": "许多微生物在低温下仍可存活，有些还能生长。",
+      "remember": "冰箱是减速器，不是灭菌器。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S004",
+        "S007"
+      ],
+      "tags": [
+        "冰箱",
+        "微生物",
+        "保鲜"
+      ],
+      "related_concept_ids": [
+        "LB113",
+        "LB073",
+        "LB072",
+        "LB030"
+      ]
+    },
+    {
+      "id": "LB007",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB007",
+      "title": "冷冻不等于消毒",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "冷冻主要抑制生长，不能把所有病原微生物都可靠杀死。",
+      "you_might_think": "“冻过的食品就没有细菌了。”",
+      "reality": "解冻后仍需按食品安全规则处理和烹调。",
+      "why": "低温让微生物代谢和繁殖变慢，但许多微生物可在冷冻中存活。",
+      "remember": "冷冻解决“保存”，不等于“灭菌”。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S007",
+        "S008"
+      ],
+      "tags": [
+        "冷冻",
+        "食品安全"
+      ],
+      "related_concept_ids": [
+        "LB014",
+        "LB011",
+        "LB009",
+        "LB008"
+      ]
+    },
+    {
+      "id": "LB008",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB008",
+      "title": "冷冻烧（freezer burn）主要是品质问题",
+      "domain": "food",
+      "angle": "explanation",
+      "one_line": "冷冻烧更多是水分升华和氧化造成的干燥、变色、风味下降。",
+      "you_might_think": "“出现冻斑就是中毒了。”",
+      "reality": "只要食品一直安全储存，冷冻烧通常影响的是质量而非自动意味着有毒。",
+      "why": "包装不严时食品表面水分会迁移到空气中，形成干燥区域。",
+      "remember": "冻烧不等于腐败，但品质可能明显下降。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S006",
+        "S008"
+      ],
+      "tags": [
+        "冷冻",
+        "食品品质"
+      ],
+      "related_concept_ids": [
+        "LB007",
+        "LB030",
+        "LB029",
+        "LB028"
+      ]
+    },
+    {
+      "id": "LB009",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB009",
+      "title": "剩菜真正重要的是时间和温度，不是“隔夜”两个字",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "食品安全风险和它放了多久、处于什么温度、是否快速冷却更相关。",
+      "you_might_think": "“隔夜=有毒，没隔夜=安全。”",
+      "reality": "易腐食品不应在室温久放；美国 USDA 建议易腐食品室温不超过2小时，炎热环境不超过1小时。",
+      "why": "细菌在适宜温度下繁殖速度快，时间越长风险越可能上升。",
+      "remember": "判断剩菜，先问“多久、什么温度、怎么储存”。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S007"
+      ],
+      "tags": [
+        "剩菜",
+        "隔夜菜",
+        "食品安全"
+      ],
+      "related_concept_ids": [
+        "LB014",
+        "LB011",
+        "LB010",
+        "LB007"
+      ]
+    },
+    {
+      "id": "LB010",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB010",
+      "title": "剩菜不是越烫越安全，重新加热也不能修复所有问题",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "彻底加热能杀灭许多活菌，但不能把所有已经形成的风险物质或储存不当造成的问题“洗掉”。",
+      "you_might_think": "“只要重新煮开，就一定安全。”",
+      "reality": "安全取决于原料、储存和加热全过程；某些耐热毒素或化学危害不是重新加热就能解决。",
+      "why": "食品安全是多环节控制，不是最后一锅煮开就全部归零。",
+      "remember": "加热不是“时光倒流”。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S006",
+        "S007"
+      ],
+      "tags": [
+        "剩菜",
+        "加热",
+        "毒素"
+      ],
+      "related_concept_ids": [
+        "LB009",
+        "LB030",
+        "LB029",
+        "LB028"
+      ]
+    },
+    {
+      "id": "LB011",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB011",
+      "title": "“看起来没坏”不能证明食品安全",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "有害微生物往往不会让食物立刻产生明显异味、颜色或口感变化。",
+      "you_might_think": "“闻起来没问题，就能吃。”",
+      "reality": "食品安全判断不能只靠鼻子和眼睛。",
+      "why": "病原微生物和腐败微生物不是一回事。",
+      "remember": "没有异常 ≠ 没有风险。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S005",
+        "S007"
+      ],
+      "tags": [
+        "食品安全",
+        "感官判断"
+      ],
+      "related_concept_ids": [
+        "LB014",
+        "LB009",
+        "LB007",
+        "LB030"
+      ]
+    },
+    {
+      "id": "LB012",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB012",
+      "title": "生鸡肉通常不需要先冲洗",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "冲洗生禽肉可能把污染液滴带到水槽、台面和其他食物上。",
+      "you_might_think": "“洗一下更干净。”",
+      "reality": "安全控制的重点是避免交叉污染和彻底烹调，而不是用水把鸡肉“洗干净”。",
+      "why": "水不能可靠地杀死病原体，却会增加污染扩散机会。",
+      "remember": "处理生禽肉，重点是分开、清洁、彻底煮熟。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S007"
+      ],
+      "tags": [
+        "生鸡肉",
+        "交叉污染"
+      ],
+      "related_concept_ids": [
+        "LB030",
+        "LB029",
+        "LB028",
+        "LB027"
+      ]
+    },
+    {
+      "id": "LB013",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB013",
+      "title": "洗菜和“消毒”不是一回事",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "流动水冲洗可以去掉部分表面污物，但不等于把所有病原体消灭。",
+      "you_might_think": "“冲得很久就等于消毒。”",
+      "reality": "不同食材和污染物需要不同处理；不要把普通冲洗理解为灭菌。",
+      "why": "微生物可能附着在复杂表面或存在于缝隙中。",
+      "remember": "清洗、消毒、灭菌是不同概念。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S005",
+        "S007"
+      ],
+      "tags": [
+        "蔬果",
+        "清洗",
+        "消毒"
+      ],
+      "related_concept_ids": [
+        "LB061",
+        "LB030",
+        "LB029",
+        "LB028"
+      ]
+    },
+    {
+      "id": "LB014",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB014",
+      "title": "霉了的软面包不能靠“切掉一块”解决",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "高含水食品内部可能已经被肉眼看不到的霉菌丝或细菌污染。",
+      "you_might_think": "“只切掉发霉点，剩下都能吃。”",
+      "reality": "USDA 对面包、软水果、软奶酪等发霉食品建议丢弃。",
+      "why": "霉菌的可见部分只是表面，菌丝可能已经深入食品。",
+      "remember": "软、湿、蓬松的食物发霉，通常别舍不得。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S009"
+      ],
+      "tags": [
+        "霉菌",
+        "面包",
+        "食品安全"
+      ],
+      "related_concept_ids": [
+        "LB015",
+        "LB011",
+        "LB009",
+        "LB007"
+      ]
+    },
+    {
+      "id": "LB015",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB015",
+      "title": "硬奶酪和软奶酪的“发霉处理”并不一样",
+      "domain": "food",
+      "angle": "explanation",
+      "one_line": "部分硬奶酪表面的小块非特定霉斑可以按食品安全指导深切去除，但软奶酪通常应丢弃。",
+      "you_might_think": "“所有发霉奶酪都一样处理。”",
+      "reality": "食品结构和含水量影响霉菌是否可能深入内部。",
+      "why": "硬质、低含水结构更不容易让霉菌深入，软湿食品则更容易被污染。",
+      "remember": "食品安全规则常常和食品结构有关。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S009"
+      ],
+      "tags": [
+        "奶酪",
+        "霉菌"
+      ],
+      "related_concept_ids": [
+        "LB014",
+        "LB090",
+        "LB089",
+        "LB066"
+      ]
+    },
+    {
+      "id": "LB016",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB016",
+      "title": "“天然”不是健康认证",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "FDA 并没有把“natural”定义成一种全面的营养或健康等级。",
+      "you_might_think": "“写着天然就一定更健康、更安全。”",
+      "reality": "在美国 FDA 语境中，“natural”有一定政策含义，但并不等于更健康，也不涵盖所有生产方法。",
+      "why": "健康价值还要看糖、盐、脂肪、能量、污染和整体饮食结构。",
+      "remember": "看到“天然”，继续看营养和配料表。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S010"
+      ],
+      "tags": [
+        "天然食品",
+        "食品标签"
+      ],
+      "related_concept_ids": [
+        "LB030",
+        "LB029",
+        "LB028",
+        "LB027"
+      ]
+    },
+    {
+      "id": "LB017",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB017",
+      "title": "“有机”也不等于“营养一定更高”",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "有机是生产与认证体系，不是“营养更高”的通用标签。",
+      "you_might_think": "“Organic=更健康=营养更多。”",
+      "reality": "美国有机标签由 USDA NOP 管理，和营养标签是两套规则。",
+      "why": "生产方式和营养组成不是同一个维度。",
+      "remember": "把“有机”当成生产标准，不要自动当成健康评分。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S011"
+      ],
+      "tags": [
+        "有机食品",
+        "标签"
+      ],
+      "related_concept_ids": [
+        "LB020",
+        "LB019",
+        "LB030",
+        "LB029"
+      ]
+    },
+    {
+      "id": "LB018",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB018",
+      "title": "食品标签上的“每份”不是建议你吃这么多",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "Nutrition Facts 的 serving size 用于统一计算标签信息，不是在告诉你应该吃多少。",
+      "you_might_think": "“标一份，所以一餐就该吃一份。”",
+      "reality": "一包食品可能含多个 servings；吃完整包时要按总量重新计算。",
+      "why": "营养标签需要一个标准计算单位，但消费者的实际摄入量可能不同。",
+      "remember": "看标签先找 serving size，再看自己实际吃了几份。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S012"
+      ],
+      "tags": [
+        "营养标签",
+        "份量"
+      ],
+      "related_concept_ids": [
+        "LB030",
+        "LB029",
+        "LB028",
+        "LB027"
+      ]
+    },
+    {
+      "id": "LB019",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB019",
+      "title": "“无添加糖”不等于“里面没有糖”",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "total sugars 与 added sugars 是不同概念。",
+      "you_might_think": "“没有 added sugar 就是无糖。”",
+      "reality": "牛奶、水果等天然含糖食品即使不添加糖，也可能有 total sugars。",
+      "why": "标签把天然糖和加工中添加的糖区分开，是为了帮助理解糖的来源。",
+      "remember": "先分清 total sugars 和 added sugars。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S013"
+      ],
+      "tags": [
+        "糖",
+        "标签"
+      ],
+      "related_concept_ids": [
+        "LB020",
+        "LB017",
+        "LB030",
+        "LB029"
+      ]
+    },
+    {
+      "id": "LB020",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB020",
+      "title": "“0 糖”不等于“整个饮料没有任何碳水或热量”",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "营养标签中的零值和具体法规定义有关，且不同地区阈值不同。",
+      "you_might_think": "“写0糖=没有任何糖类分子。”",
+      "reality": "标签是按法规阈值和规定的每份量计算的，不要把营销语言当成化学意义上的绝对零。",
+      "why": "食品标签是法规定义下的计量语言，不是“无限精确的化学分析”。",
+      "remember": "看营养表，不只看包装正面。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S013",
+        "S012"
+      ],
+      "tags": [
+        "无糖",
+        "标签",
+        "营销"
+      ],
+      "related_concept_ids": [
+        "LB030",
+        "LB019",
+        "LB017",
+        "LB029"
+      ]
+    },
+    {
+      "id": "LB021",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB021",
+      "title": "果汁和完整水果不是同一种食物",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "果汁通常少了完整水果中的纤维结构，也更容易一次喝下较多糖和能量。",
+      "you_might_think": "“都是水果做的，所以喝果汁等于吃水果。”",
+      "reality": "完整水果和果汁的咀嚼、纤维结构、摄入速度不同。",
+      "why": "食物被榨成液体后，体积和饱腹感的关系会改变。",
+      "remember": "“来自水果”不等于“等于水果”。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S014",
+        "S013"
+      ],
+      "tags": [
+        "果汁",
+        "水果",
+        "营养"
+      ],
+      "related_concept_ids": [
+        "LB030",
+        "LB029",
+        "LB028",
+        "LB027"
+      ]
+    },
+    {
+      "id": "LB022",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB022",
+      "title": "“清淡”不等于“低升糖”",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "口味清淡主要是油、盐、辣等感官维度；血糖反应受碳水类型、加工、纤维和食物结构影响。",
+      "you_might_think": "“没油没盐、稀稀的，就一定不升糖。”",
+      "reality": "精制、细碎、糊化程度高的碳水食物仍可能有较高血糖反应。",
+      "why": "影响血糖的不只有“油盐”，还有碳水的种类、结构和消化速度。",
+      "remember": "清淡是味觉概念，不是血糖指标。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S014",
+        "S012"
+      ],
+      "tags": [
+        "粥",
+        "升糖",
+        "清淡"
+      ],
+      "related_concept_ids": [
+        "LB023",
+        "LB030",
+        "LB029",
+        "LB028"
+      ]
+    },
+    {
+      "id": "LB023",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB023",
+      "title": "粥的血糖反应不能只凭“清淡”判断",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "不同粥的原料、颗粒、加工和搭配不同，GI 可以差异很大。",
+      "you_might_think": "“所有粥都会让血糖快速升高。”",
+      "reality": "研究测得的不同粥类 GI 差异很大，不能把一个食物类别一刀切。",
+      "why": "加工形式和食材组成会影响消化速度和血糖反应。",
+      "remember": "说“粥一定升糖快”也太粗糙，重点是具体食材和做法。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S014"
+      ],
+      "tags": [
+        "粥",
+        "GI",
+        "碳水"
+      ],
+      "related_concept_ids": [
+        "LB022",
+        "LB030",
+        "LB029",
+        "LB028"
+      ]
+    },
+    {
+      "id": "LB024",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB024",
+      "title": "复合维生素不是“保险型健康升级包”",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "对没有特定缺乏的人，常规复合维生素并不是公认的通用长寿药。",
+      "you_might_think": "“每天吃一片，基本不用管饮食。”",
+      "reality": "参考指南和大型试验并没有把普通复合维生素证明成替代健康饮食的万能方案；有明确缺乏或特殊人群是另一回事。",
+      "why": "营养素缺乏与“多一点就更健康”是两套逻辑。",
+      "remember": "补缺乏和“预防一切”不是一回事。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S001",
+        "S019"
+      ],
+      "tags": [
+        "维生素",
+        "保健品"
+      ],
+      "related_concept_ids": [
+        "LB025",
+        "LB057",
+        "LB030",
+        "LB029"
+      ]
+    },
+    {
+      "id": "LB025",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB025",
+      "title": "“排毒饮料”不是身体清除废物的必需品",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "肝脏、肾脏、肺等器官本身就在持续参与代谢和排泄。",
+      "you_might_think": "“喝一套果汁才能把毒排出去。”",
+      "reality": "没有统一的“体内毒素”需要某个饮料一次性清除。",
+      "why": "“detox”营销常把正常代谢过程重新包装成消费产品。",
+      "remember": "先问：具体是什么毒、证据是什么、正常生理机制是什么？",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S001",
+        "S019"
+      ],
+      "tags": [
+        "排毒",
+        "保健品"
+      ],
+      "related_concept_ids": [
+        "LB024",
+        "LB057",
+        "LB054",
+        "LB044"
+      ]
+    },
+    {
+      "id": "LB026",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB026",
+      "title": "运动饮料不是日常喝水的默认升级版",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "多数普通日常活动并不需要额外的糖和电解质饮料。",
+      "you_might_think": "“运动饮料比水更健康。”",
+      "reality": "长时间、高强度运动或大量出汗场景与普通坐办公室的补水需求不同。",
+      "why": "运动饮料的配方就是为了特定运动情境设计的。",
+      "remember": "场景不同，饮料的价值也不同。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S017",
+        "S014"
+      ],
+      "tags": [
+        "运动饮料",
+        "补水"
+      ],
+      "related_concept_ids": [
+        "LB029",
+        "LB030",
+        "LB028",
+        "LB027"
+      ]
+    },
+    {
+      "id": "LB027",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB027",
+      "title": "“喝开水”主要解决的是饮水与部分微生物风险，不是获得神奇养生效果",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "煮沸能显著降低许多微生物风险，但不会让所有水质问题自动消失。",
+      "you_might_think": "“水只要烧开，就变成更养生的水。”",
+      "reality": "是否安全还要看原水质量、污染类型和储存过程；煮沸也不会去除所有化学污染物。",
+      "why": "热处理对微生物有效，但不同污染物的性质不同。",
+      "remember": "烧开水是处理方法，不是“水的等级升级”。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S005",
+        "S006"
+      ],
+      "tags": [
+        "开水",
+        "饮水",
+        "净水"
+      ],
+      "related_concept_ids": [
+        "LB028",
+        "LB030",
+        "LB029",
+        "LB026"
+      ]
+    },
+    {
+      "id": "LB028",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB028",
+      "title": "“每天必须喝8杯水”不是普遍硬性指标",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "健康成年人水分需求受体型、饮食、气候、活动和疾病等影响。",
+      "you_might_think": "“不喝够8杯就一定缺水。”",
+      "reality": "历史文献并没有为“8×8”找到坚实的普遍性科学依据。",
+      "why": "人体会通过口渴、肾脏和其他机制调节水分平衡。",
+      "remember": "把8杯当提醒可以，不要当法律。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S015"
+      ],
+      "tags": [
+        "饮水",
+        "8杯水"
+      ],
+      "related_concept_ids": [
+        "LB027",
+        "LB030",
+        "LB029",
+        "LB026"
+      ]
+    },
+    {
+      "id": "LB029",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB029",
+      "title": "咖啡和茶中的水也算进入总液体摄入",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "含咖啡因饮料仍能提供水分，虽然咖啡因可能影响睡眠等。",
+      "you_might_think": "“咖啡和茶都不算水。”",
+      "reality": "人体获得的液体来源不只有白水；是否适合喝更多咖啡是另一个问题。",
+      "why": "饮水量与咖啡因效应是两个维度。",
+      "remember": "不要把“含咖啡因”理解成“完全不能补水”。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S015",
+        "S021"
+      ],
+      "tags": [
+        "咖啡",
+        "茶",
+        "补水"
+      ],
+      "related_concept_ids": [
+        "LB026",
+        "LB030",
+        "LB028",
+        "LB027"
+      ]
+    },
+    {
+      "id": "LB030",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB030",
+      "title": "盐的“颜色、产地、矿物名头”不等于健康等级",
+      "domain": "food",
+      "angle": "misconception",
+      "one_line": "盐的核心成分仍主要与钠摄入相关，颜色或产地不能替代总钠量判断。",
+      "you_might_think": "“粉盐、海盐、岩盐一定比普通盐健康。”",
+      "reality": "不同盐可能带来微量矿物差异，但总体饮食中的钠摄入仍是更重要的维度。",
+      "why": "营销强调稀有来源，但健康效果需要看真正摄入了多少钠。",
+      "remember": "看钠，不看“贵”。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S014",
+        "S012"
+      ],
+      "tags": [
+        "盐",
+        "钠",
+        "营销"
+      ],
+      "related_concept_ids": [
+        "LB020",
+        "LB029",
+        "LB028",
+        "LB027"
+      ]
+    },
+    {
+      "id": "LB031",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB031",
+      "title": "出汗多不等于减脂更多",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "汗水主要反映散热和体液丢失，不是脂肪“融化”的直接指标。",
+      "you_might_think": "“流汗越多，燃脂越多。”",
+      "reality": "运动后体重下降的一部分可能只是水分变化。",
+      "why": "脂肪减少需要长期能量平衡变化，汗量受温度、湿度、体能等多因素影响。",
+      "remember": "汗多先想到补水和散热，不要把汗量当燃脂计。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S017"
+      ],
+      "tags": [
+        "出汗",
+        "减脂",
+        "运动"
+      ],
+      "related_concept_ids": [
+        "LB033",
+        "LB044",
+        "LB032",
+        "LB060"
+      ]
+    },
+    {
+      "id": "LB032",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB032",
+      "title": "酸痛不是“练得有效”的唯一证明",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "延迟性肌肉酸痛可以出现在不熟悉或高负荷运动后，但没有酸痛也可能训练有效。",
+      "you_might_think": "“第二天不酸就白练了。”",
+      "reality": "训练效果还与力量、耐力、技术和长期进步有关。",
+      "why": "酸痛更多反映组织应激与恢复过程，不是收益本身。",
+      "remember": "用进步衡量训练，不用酸痛衡量。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S017"
+      ],
+      "tags": [
+        "运动",
+        "酸痛"
+      ],
+      "related_concept_ids": [
+        "LB033",
+        "LB031",
+        "LB060",
+        "LB059"
+      ]
+    },
+    {
+      "id": "LB033",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB033",
+      "title": "减脂不能靠只练某一块把那一块的脂肪“点掉”",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "局部训练会增强对应肌肉，但脂肪动员不是简单按训练部位精准分配。",
+      "you_might_think": "“练腹肌=直接减肚子脂肪。”",
+      "reality": "体脂变化更受整体能量平衡、遗传和激素等影响。",
+      "why": "肌肉和脂肪是不同组织，训练刺激不能把脂肪精准切成区域清除。",
+      "remember": "练腹可以练腹，但别把它当局部抽脂。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S017"
+      ],
+      "tags": [
+        "减脂",
+        "腹肌",
+        "运动"
+      ],
+      "related_concept_ids": [
+        "LB031",
+        "LB032",
+        "LB060",
+        "LB059"
+      ]
+    },
+    {
+      "id": "LB034",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB034",
+      "title": "发烧是症状，不是单独一种疾病",
+      "domain": "health",
+      "angle": "explanation",
+      "one_line": "发烧是身体对感染、炎症等多种情况作出反应时可能出现的体温升高。",
+      "you_might_think": "“退烧药把病治好了。”",
+      "reality": "退烧主要改善症状；真正原因可能需要另一套处理。",
+      "why": "发热是机体调节体温的结果，病因可能很多。",
+      "remember": "看到发热，先问原因和严重程度。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S018",
+        "S019"
+      ],
+      "tags": [
+        "发烧",
+        "症状",
+        "感染"
+      ],
+      "related_concept_ids": [
+        "LB060",
+        "LB059",
+        "LB058",
+        "LB057"
+      ]
+    },
+    {
+      "id": "LB035",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB035",
+      "title": "抗生素不是“消炎药万能版”",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "抗生素针对特定细菌感染，不治疗普通感冒和流感等病毒感染。",
+      "you_might_think": "“发炎/发烧就吃抗生素。”",
+      "reality": "不必要使用会带来副作用和耐药风险。",
+      "why": "细菌和病毒的生物学结构不同，抗菌药物靶点也不同。",
+      "remember": "先判断感染类型，再谈抗生素。",
+      "evidence_level": "very_strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S018"
+      ],
+      "tags": [
+        "抗生素",
+        "病毒",
+        "细菌"
+      ],
+      "related_concept_ids": [
+        "LB058",
+        "LB053",
+        "LB036",
+        "LB060"
+      ]
+    },
+    {
+      "id": "LB036",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB036",
+      "title": "感冒流鼻涕变黄或绿，不自动等于“细菌感染”",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "鼻涕颜色可以随免疫细胞、黏液浓度和病程变化，并不能单凭颜色诊断细菌感染。",
+      "you_might_think": "“绿鼻涕=必须吃抗生素。”",
+      "reality": "是否需要就医或药物取决于症状持续时间、严重程度和临床判断。",
+      "why": "症状颜色不是单独可靠的病原学检测。",
+      "remember": "颜色不是培养皿。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S018",
+        "S019"
+      ],
+      "tags": [
+        "感冒",
+        "鼻涕",
+        "抗生素"
+      ],
+      "related_concept_ids": [
+        "LB058",
+        "LB053",
+        "LB041",
+        "LB037"
+      ]
+    },
+    {
+      "id": "LB037",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB037",
+      "title": "维生素C不是普通感冒的万能预防药",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "对大多数人，规律补充维生素C并不能明显减少感冒发生率，可能只有小幅影响。",
+      "you_might_think": "“感冒前吃维C就不会感冒。”",
+      "reality": "研究总体不支持把维C当作通用的防感冒药。",
+      "why": "普通感冒由很多病毒引起，不是简单的“缺维C”。",
+      "remember": "正常饮食比高剂量补充更重要。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S019",
+        "S020"
+      ],
+      "tags": [
+        "维生素C",
+        "感冒"
+      ],
+      "related_concept_ids": [
+        "LB053",
+        "LB041",
+        "LB036",
+        "LB060"
+      ]
+    },
+    {
+      "id": "LB038",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB038",
+      "title": "酒精可能让人更快困，却可能让后半夜睡得更差",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "酒精有镇静效应，但会使睡眠更碎片化、更浅。",
+      "you_might_think": "“睡前喝一点酒是天然安眠药。”",
+      "reality": "酒精不应作为常规助眠手段。",
+      "why": "“更快睡着”和“睡得好”不是同一指标。",
+      "remember": "困得快不等于睡得好。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S020"
+      ],
+      "tags": [
+        "睡眠",
+        "酒精"
+      ],
+      "related_concept_ids": [
+        "LB059",
+        "LB060",
+        "LB040",
+        "LB039"
+      ]
+    },
+    {
+      "id": "LB039",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB039",
+      "title": "咖啡因的作用可能持续到你以为已经过了很久",
+      "domain": "health",
+      "angle": "explanation",
+      "one_line": "足量咖啡因在睡前数小时仍可能影响入睡和睡眠时间。",
+      "you_might_think": "“下午喝咖啡，晚上肯定没关系。”",
+      "reality": "受剂量、个体差异和时间影响；研究显示较大剂量在睡前6小时仍可能干扰睡眠。",
+      "why": "咖啡因的代谢不是“喝完几小时就清零”。",
+      "remember": "睡眠敏感的人尤其要注意下午后的咖啡因。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S021"
+      ],
+      "tags": [
+        "咖啡因",
+        "睡眠"
+      ],
+      "related_concept_ids": [
+        "LB060",
+        "LB059",
+        "LB040",
+        "LB038"
+      ]
+    },
+    {
+      "id": "LB040",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB040",
+      "title": "“睡够8小时”不是所有成年人完全相同的硬指标",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "睡眠需求存在个体差异，而且年龄也会影响需求。",
+      "you_might_think": "“不是8小时就是睡眠不足。”",
+      "reality": "更重要的是长期睡眠时长、质量和白天功能是否合适。",
+      "why": "人体不是一台只接受一个固定睡眠时长的机器。",
+      "remember": "把8小时当常见参考，不要当考试分数。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S020"
+      ],
+      "tags": [
+        "睡眠",
+        "8小时"
+      ],
+      "related_concept_ids": [
+        "LB060",
+        "LB059",
+        "LB039",
+        "LB038"
+      ]
+    },
+    {
+      "id": "LB041",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB041",
+      "title": "鼻炎和普通感冒不是一回事",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "过敏性鼻炎等可以造成鼻塞、流涕、打喷嚏，但并非都是感染。",
+      "you_might_think": "“流鼻涕就是感冒了。”",
+      "reality": "病因不同，处理方式也可能不同。",
+      "why": "症状相似不代表病因相同。",
+      "remember": "先区分感染、过敏和其他原因。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S019"
+      ],
+      "tags": [
+        "鼻炎",
+        "感冒"
+      ],
+      "related_concept_ids": [
+        "LB053",
+        "LB037",
+        "LB036",
+        "LB060"
+      ]
+    },
+    {
+      "id": "LB042",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB042",
+      "title": "咳嗽本身是一个防御性反射",
+      "domain": "health",
+      "angle": "explanation",
+      "one_line": "咳嗽可以帮助清除气道分泌物和异物。",
+      "you_might_think": "“咳嗽本身就是坏事，越快完全压掉越好。”",
+      "reality": "是否需要止咳要看原因和严重程度。",
+      "why": "咳嗽反射能把分泌物、颗粒和刺激物从气道向外移动。",
+      "remember": "咳嗽是症状，也是防御机制。",
+      "evidence_level": "moderate",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S019"
+      ],
+      "tags": [
+        "咳嗽",
+        "呼吸道"
+      ],
+      "related_concept_ids": [
+        "LB060",
+        "LB059",
+        "LB058",
+        "LB057"
+      ]
+    },
+    {
+      "id": "LB043",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB043",
+      "title": "“天然”药物也可能有副作用",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "天然来源并不等于生物学上温和或没有相互作用。",
+      "you_might_think": "“中草药/天然补品不会伤身体。”",
+      "reality": "植物和天然产物同样含有活性成分，也可能影响肝肾、出血风险或药物代谢。",
+      "why": "“天然”描述来源，不描述风险等级。",
+      "remember": "问“有效成分和证据是什么”，不要只问“天然吗”。",
+      "evidence_level": "moderate",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S019"
+      ],
+      "tags": [
+        "天然",
+        "补充剂"
+      ],
+      "related_concept_ids": [
+        "LB060",
+        "LB059",
+        "LB058",
+        "LB057"
+      ]
+    },
+    {
+      "id": "LB044",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB044",
+      "title": "“出汗排毒”把正常生理功能说复杂了",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "汗液的主要作用是散热，人体代谢废物主要由肝、肾等系统处理。",
+      "you_might_think": "“桑拿把毒素都蒸出来。”",
+      "reality": "出汗会丢失水和电解质，但不能替代正常的代谢和排泄系统。",
+      "why": "汗腺的主要生理任务是体温调节。",
+      "remember": "出汗=散热，不等于“身体排毒”。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S017",
+        "S019"
+      ],
+      "tags": [
+        "排毒",
+        "出汗"
+      ],
+      "related_concept_ids": [
+        "LB054",
+        "LB031",
+        "LB025",
+        "LB060"
+      ]
+    },
+    {
+      "id": "LB045",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB045",
+      "title": "晒黑不是“健康小麦色”的代价可忽略版本",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "皮肤变黑是对紫外线暴露的一种反应，并不意味着皮肤得到了无害的“健康加分”。",
+      "you_might_think": "“晒黑代表身体在变强壮。”",
+      "reality": "紫外线暴露与皮肤老化、晒伤和皮肤癌风险相关。",
+      "why": "黑色素增加是皮肤防御反应之一，而不是免疫护盾。",
+      "remember": "日晒需要管理，不要把晒黑当健康指标。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S023"
+      ],
+      "tags": [
+        "防晒",
+        "晒黑"
+      ],
+      "related_concept_ids": [
+        "LB047",
+        "LB046",
+        "LB060",
+        "LB059"
+      ]
+    },
+    {
+      "id": "LB046",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB046",
+      "title": "防晒霜不是“涂一次就一天不管”",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "防晒效果受涂抹量、出汗、游泳和摩擦等影响。",
+      "you_might_think": "“早上抹一次，全天通用。”",
+      "reality": "需要按产品说明并结合暴露情况重新涂。",
+      "why": "防晒剂会因为摩擦、汗水和时间而减少有效覆盖。",
+      "remember": "防晒是一套行为，不是一层永久涂层。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S023"
+      ],
+      "tags": [
+        "防晒",
+        "紫外线"
+      ],
+      "related_concept_ids": [
+        "LB047",
+        "LB045",
+        "LB060",
+        "LB059"
+      ]
+    },
+    {
+      "id": "LB047",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB047",
+      "title": "防晒霜不会让你完全隔绝紫外线",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "防晒产品降低一定范围的紫外线暴露，但不是隐身罩。",
+      "you_might_think": "“SPF高就可以随便晒。”",
+      "reality": "还应结合遮阳、衣物、时间安排等措施。",
+      "why": "不同产品和使用方式都会影响实际防护。",
+      "remember": "高 SPF 不是“无限晒”的通行证。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S023"
+      ],
+      "tags": [
+        "SPF",
+        "防晒"
+      ],
+      "related_concept_ids": [
+        "LB046",
+        "LB045",
+        "LB060",
+        "LB059"
+      ]
+    },
+    {
+      "id": "LB048",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB048",
+      "title": "止汗剂和除臭剂不是同一种东西",
+      "domain": "health",
+      "angle": "explanation",
+      "one_line": "除臭产品主要处理气味，止汗剂则通过特定机制减少汗液分泌。",
+      "you_might_think": "“止汗就是给汗加香味。”",
+      "reality": "产品定位不同，成分和作用机制也不同。",
+      "why": "气味和汗液本身是两个问题：细菌分解汗液可能产生气味。",
+      "remember": "买产品先看它是在“控汗”还是“控味”。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S023"
+      ],
+      "tags": [
+        "止汗",
+        "除臭"
+      ],
+      "related_concept_ids": [
+        "LB060",
+        "LB059",
+        "LB058",
+        "LB057"
+      ]
+    },
+    {
+      "id": "LB049",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB049",
+      "title": "剃毛不会让毛囊突然生产“更粗的毛”",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "剃毛只是从皮肤表面切断毛干，不会把毛囊改造成更粗的毛囊。",
+      "you_might_think": "“越剃越粗、越剃越黑。”",
+      "reality": "再长出来的短毛因为截面平整、触感更硬，视觉上可能显得更粗。",
+      "why": "改变的是毛干形态和视觉，不是毛囊数量。",
+      "remember": "“看起来粗”不等于“生理上变粗”。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S039"
+      ],
+      "tags": [
+        "毛发",
+        "剃毛"
+      ],
+      "related_concept_ids": [
+        "LB060",
+        "LB059",
+        "LB058",
+        "LB057"
+      ]
+    },
+    {
+      "id": "LB050",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB050",
+      "title": "头发和指甲并不会在死亡后继续生长",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "死亡后组织代谢停止；皮肤脱水收缩会让毛发和指甲显得更长。",
+      "you_might_think": "“尸体死后头发还在长。”",
+      "reality": "视觉变化来自周围组织的变化。",
+      "why": "皮肤失水后变紧，毛发和指甲暴露出的长度看起来增加。",
+      "remember": "这是视觉错觉，不是继续生长。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S039"
+      ],
+      "tags": [
+        "人体",
+        "生长"
+      ],
+      "related_concept_ids": [
+        "LB060",
+        "LB059",
+        "LB058",
+        "LB057"
+      ]
+    },
+    {
+      "id": "LB051",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB051",
+      "title": "人不是“只用了10%的大脑”",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "“10%大脑”是长期流传的都市传说，不符合现代神经科学。",
+      "you_might_think": "“潜能开发就是解锁剩下90%。”",
+      "reality": "不同任务会动员不同脑区，但并不意味着绝大部分脑组织长期闲置。",
+      "why": "脑组织代谢成本高，长期维持大量“完全不用的”神经组织并不符合生理现实。",
+      "remember": "所谓“开发90%大脑”不是科学概念。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "大脑",
+        "神经科学"
+      ],
+      "related_concept_ids": [
+        "LB052",
+        "LB060",
+        "LB059",
+        "LB058"
+      ]
+    },
+    {
+      "id": "LB052",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB052",
+      "title": "“左脑人/右脑人”不是可靠的人格分类",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "大脑两半球确实存在功能偏侧化，但复杂思维并不是一半脑只负责理性、另一半只负责艺术。",
+      "you_might_think": "“我是右脑型，所以不擅长数学。”",
+      "reality": "认知活动通常涉及多个脑区和网络。",
+      "why": "功能专门化与“人格分成两类”是不同概念。",
+      "remember": "别用左右脑标签给自己定型。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "左右脑",
+        "大脑"
+      ],
+      "related_concept_ids": [
+        "LB051",
+        "LB060",
+        "LB059",
+        "LB058"
+      ]
+    },
+    {
+      "id": "LB053",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB053",
+      "title": "“冷”本身不是普通感冒的病原体",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "普通感冒通常由病毒感染造成。",
+      "you_might_think": "“吹空调/淋雨就直接把感冒吹出来了。”",
+      "reality": "寒冷环境可能影响舒适度和某些传播条件，但感冒仍需要病毒感染这一病因。",
+      "why": "症状触发条件与真正病原体不是同一个层面。",
+      "remember": "冷≠病毒；感染才是普通感冒的核心原因。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S018",
+        "S019"
+      ],
+      "tags": [
+        "感冒",
+        "病毒",
+        "寒冷"
+      ],
+      "related_concept_ids": [
+        "LB041",
+        "LB037",
+        "LB036",
+        "LB035"
+      ]
+    },
+    {
+      "id": "LB054",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB054",
+      "title": "体温高不一定是“体内有毒素”",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "发热有很多医学原因，包括感染、炎症、药物等。",
+      "you_might_think": "“发烧就是毒素在往外排。”",
+      "reality": "发热需要根据原因和伴随症状判断。",
+      "why": "人体调节体温的机制与“排毒”概念不是同一套生理过程。",
+      "remember": "用医学原因解释，不用“毒素”万能化。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S018",
+        "S019"
+      ],
+      "tags": [
+        "发热",
+        "排毒"
+      ],
+      "related_concept_ids": [
+        "LB044",
+        "LB025",
+        "LB060",
+        "LB059"
+      ]
+    },
+    {
+      "id": "LB055",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB055",
+      "title": "“吃药配牛奶”不是所有药都可以随便搭",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "部分药物会受食物、饮料或矿物质影响吸收。",
+      "you_might_think": "“牛奶是营养品，和药一起肯定更温和。”",
+      "reality": "不同药物的相互作用不同，应按说明书或医嘱服用。",
+      "why": "药物需要在特定化学环境中溶解、吸收并发挥作用。",
+      "remember": "不能用“天然/营养饮品”替代药品相互作用判断。",
+      "evidence_level": "moderate",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S018"
+      ],
+      "tags": [
+        "用药",
+        "牛奶",
+        "相互作用"
+      ],
+      "related_concept_ids": [
+        "LB058",
+        "LB060",
+        "LB059",
+        "LB057"
+      ]
+    },
+    {
+      "id": "LB056",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB056",
+      "title": "药品不是“药效越强越好”",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "用药的目标是以合适剂量获得收益，同时把副作用控制在可接受范围。",
+      "you_might_think": "“症状重，就把剂量加倍。”",
+      "reality": "药物剂量和适应证应按说明书或专业人员指导。",
+      "why": "药物有治疗窗、代谢和毒副作用边界。",
+      "remember": "不要自行加量、叠加同类药。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S018"
+      ],
+      "tags": [
+        "药物",
+        "剂量"
+      ],
+      "related_concept_ids": [
+        "LB057",
+        "LB060",
+        "LB059",
+        "LB058"
+      ]
+    },
+    {
+      "id": "LB057",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB057",
+      "title": "保健品和药物不是一个监管概念",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "保健食品/膳食补充剂与治疗疾病的药物在法规定位和证据要求上不同。",
+      "you_might_think": "“写了某成分，就等于药。”",
+      "reality": "产品宣传中的“改善”“增强”等词不能自动等同于治疗作用。",
+      "why": "“含有活性成分”不等于“临床有效治疗疾病”。",
+      "remember": "先看产品类别和证据，不看包装的强壮语气。",
+      "evidence_level": "moderate",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S001",
+        "S019"
+      ],
+      "tags": [
+        "保健品",
+        "药物"
+      ],
+      "related_concept_ids": [
+        "LB056",
+        "LB025",
+        "LB024",
+        "LB060"
+      ]
+    },
+    {
+      "id": "LB058",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB058",
+      "title": "抗生素疗程不是自己觉得好多了就随意停",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "是否停药、换药取决于具体药物、感染类型和医生方案，不能用“感觉好多了”单独决定。",
+      "you_might_think": "“症状没了，剩下的药就可以留着下次吃。”",
+      "reality": "应按处方和专业指导处理剩余药物，不要自行保存备用。",
+      "why": "抗菌治疗需要针对特定感染；自行短停、换药和重复使用都会增加不必要的风险。",
+      "remember": "不要把剩余抗生素变成“家庭药箱常备品”。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S018"
+      ],
+      "tags": [
+        "抗生素",
+        "用药"
+      ],
+      "related_concept_ids": [
+        "LB055",
+        "LB036",
+        "LB035",
+        "LB060"
+      ]
+    },
+    {
+      "id": "LB059",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB059",
+      "title": "睡前酒精和“助眠”不是一回事",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "酒精可能缩短入睡时间，但会让睡眠更碎、更浅。",
+      "you_might_think": "“喝酒能让睡眠更深。”",
+      "reality": "它不适合作为常规助眠方案。",
+      "why": "镇静作用和正常睡眠结构不同。",
+      "remember": "困得快不等于恢复得好。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S020"
+      ],
+      "tags": [
+        "睡眠",
+        "酒精"
+      ],
+      "related_concept_ids": [
+        "LB038",
+        "LB060",
+        "LB040",
+        "LB039"
+      ]
+    },
+    {
+      "id": "LB060",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB060",
+      "title": "短时间午睡不等于“偷懒”",
+      "domain": "health",
+      "angle": "misconception",
+      "one_line": "适当的短暂午睡可以提高警觉性，但太长或太晚可能影响夜间睡眠。",
+      "you_might_think": "“午睡都会把生物钟睡坏。”",
+      "reality": "是否有益取决于时长、时间和个人睡眠状况。",
+      "why": "睡眠压力与昼夜节律共同影响睡眠。",
+      "remember": "午睡看场景，不是非黑即白。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S020"
+      ],
+      "tags": [
+        "午睡",
+        "睡眠"
+      ],
+      "related_concept_ids": [
+        "LB059",
+        "LB040",
+        "LB039",
+        "LB038"
+      ]
+    },
+    {
+      "id": "LB061",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB061",
+      "title": "清洁、消毒、灭菌不是三个同义词",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "清洁主要去污；消毒降低病原体；灭菌追求更彻底地消除微生物。",
+      "you_might_think": "“喷消毒液=已经灭菌。”",
+      "reality": "不同用途对应不同标准和产品。",
+      "why": "表面有污垢时可能削弱某些消毒产品效果。",
+      "remember": "先搞清你需要“干净”还是“消毒”。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S024"
+      ],
+      "tags": [
+        "清洁",
+        "消毒",
+        "灭菌"
+      ],
+      "related_concept_ids": [
+        "LB117",
+        "LB013",
+        "LB090",
+        "LB089"
+      ]
+    },
+    {
+      "id": "LB062",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB062",
+      "title": "消毒剂不是“喷一下就立刻生效”",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "很多消毒产品需要保持表面湿润达到规定接触时间。",
+      "you_might_think": "“喷上去马上擦掉，已经消毒了。”",
+      "reality": "应按产品标签的使用浓度和接触时间操作。",
+      "why": "杀灭微生物需要足够的化学作用时间。",
+      "remember": "看标签里的 contact time。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S024"
+      ],
+      "tags": [
+        "消毒剂",
+        "接触时间"
+      ],
+      "related_concept_ids": [
+        "LB090",
+        "LB089",
+        "LB088",
+        "LB087"
+      ]
+    },
+    {
+      "id": "LB063",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB063",
+      "title": "漂白剂和其他清洁剂不要混用",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "不同化学品混合可能产生刺激性或有毒气体。",
+      "you_might_think": "“多种清洁剂混在一起更强。”",
+      "reality": "EPA 明确建议不要混合清洁产品，尤其不要随意把漂白剂与其他化学品混合。",
+      "why": "化学反应可能生成挥发性危险产物。",
+      "remember": "清洁剂不是调酒。",
+      "evidence_level": "very_strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S024"
+      ],
+      "tags": [
+        "漂白剂",
+        "清洁剂"
+      ],
+      "related_concept_ids": [
+        "LB090",
+        "LB089",
+        "LB088",
+        "LB087"
+      ]
+    },
+    {
+      "id": "LB064",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB064",
+      "title": "肥皂并不是“必须杀死细菌”才算洗干净",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "肥皂和水通过乳化、包裹和冲洗把污物、微生物和化学物质从手上带走。",
+      "you_might_think": "“不是抗菌皂就洗不掉细菌。”",
+      "reality": "普通肥皂配合充分揉搓和冲洗就能完成重要的清洁作用。",
+      "why": "肥皂分子能形成胶束，把油脂和颗粒包裹并随水冲走。",
+      "remember": "洗手的关键是覆盖、摩擦、冲洗，不是泡沫越多越好。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S016"
+      ],
+      "tags": [
+        "肥皂",
+        "洗手",
+        "胶束"
+      ],
+      "related_concept_ids": [
+        "LB168",
+        "LB065",
+        "LB090",
+        "LB089"
+      ]
+    },
+    {
+      "id": "LB065",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB065",
+      "title": "洗手的“20秒”重点不是神奇秒数，而是覆盖和充分摩擦",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "20秒是容易执行的公共卫生建议，但真正重要的是把手掌、手背、指缝、指甲周围等部位都洗到。",
+      "you_might_think": "“只要数到20秒，随便搓两下也行。”",
+      "reality": "覆盖完整表面、充分摩擦和冲洗更重要。",
+      "why": "短时间往往意味着遗漏区域。",
+      "remember": "20秒是最低限度的操作提示，不是魔法数字。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S016"
+      ],
+      "tags": [
+        "洗手",
+        "卫生"
+      ],
+      "related_concept_ids": [
+        "LB064",
+        "LB090",
+        "LB089",
+        "LB088"
+      ]
+    },
+    {
+      "id": "LB066",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB066",
+      "title": "空气净化器不能解决所有空气问题",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "HEPA 类过滤器主要处理颗粒物，不等于能解决所有气体、异味、湿度和霉菌来源。",
+      "you_might_think": "“买个空气净化器，霉味和甲醛问题全解决。”",
+      "reality": "EPA 指出空气净化器不能解决导致霉菌的潮湿源头。",
+      "why": "过滤器的物理机制决定了它擅长抓颗粒，不一定擅长处理气体。",
+      "remember": "空气净化=控制某一类污染物，不是万能除污。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S025",
+        "S026"
+      ],
+      "tags": [
+        "空气净化器",
+        "HEPA",
+        "霉菌"
+      ],
+      "related_concept_ids": [
+        "LB090",
+        "LB089",
+        "LB068",
+        "LB067"
+      ]
+    },
+    {
+      "id": "LB067",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB067",
+      "title": "HEPA 主要擅长拦截颗粒，不是“吸走一切化学气体”",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "HEPA 是机械式颗粒过滤技术。",
+      "you_might_think": "“HEPA=能过滤所有空气污染。”",
+      "reality": "HEPA 对颗粒物有效，但气体污染物需要不同的吸附或处理机制。",
+      "why": "滤网通过纤维结构拦截颗粒，对分子级气体并不是同一个机制。",
+      "remember": "看产品标注到底解决什么污染物。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S026"
+      ],
+      "tags": [
+        "HEPA",
+        "颗粒物"
+      ],
+      "related_concept_ids": [
+        "LB066",
+        "LB090",
+        "LB089",
+        "LB088"
+      ]
+    },
+    {
+      "id": "LB068",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB068",
+      "title": "臭氧空气净化器不是“越刺激鼻子越有效”",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "臭氧本身是肺部刺激物，EPA 不建议在有人占用的空间使用会主动产生臭氧的空气净化设备。",
+      "you_might_think": "“空气里有消毒味，说明净化得更彻底。”",
+      "reality": "臭氧发生器不能简单等同于安全有效的室内空气净化。",
+      "why": "臭氧本身具有反应性，可能刺激呼吸道并产生副产物。",
+      "remember": "闻起来“有味道”不是有效性的指标。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S025"
+      ],
+      "tags": [
+        "臭氧",
+        "空气净化器"
+      ],
+      "related_concept_ids": [
+        "LB066",
+        "LB090",
+        "LB089",
+        "LB088"
+      ]
+    },
+    {
+      "id": "LB069",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB069",
+      "title": "除湿机不是“制冷机的缩水版”",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "除湿机通过冷凝等机制降低空气中的水分，通常同时向房间释放热量。",
+      "you_might_think": "“除湿机会把房间吹得像空调一样凉。”",
+      "reality": "除湿主要改变湿度；制冷空调主要目标是移走热量。",
+      "why": "除湿器把空气中的水蒸气凝结并收集，同时设备自身耗电会产生热。",
+      "remember": "湿度和温度是两个不同的环境变量。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "除湿机",
+        "湿度"
+      ],
+      "related_concept_ids": [
+        "LB089",
+        "LB156",
+        "LB090",
+        "LB088"
+      ]
+    },
+    {
+      "id": "LB070",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB070",
+      "title": "电风扇通常不是在“制造冷空气”",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "风扇主要通过空气流动加快皮肤表面汗液和热量交换，让人觉得更凉。",
+      "you_might_think": "“开风扇会把房间本身降很多度。”",
+      "reality": "人在房间里时，风扇主要改善体感；空房间持续开风扇并不会像空调一样制冷。",
+      "why": "蒸发和对流加快了人体散热。",
+      "remember": "风扇主要冷却人，不是冷却房间。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "风扇",
+        "散热"
+      ],
+      "related_concept_ids": [
+        "LB073",
+        "LB157",
+        "LB090",
+        "LB089"
+      ]
+    },
+    {
+      "id": "LB071",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB071",
+      "title": "空调不是“凭空制造冷气”",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "家用空调通常通过制冷循环把室内热量搬到室外。",
+      "you_might_think": "“空调在制造冷。”",
+      "reality": "它真正做的是移走热量，并把热量排到室外。",
+      "why": "制冷剂在不同压力下循环吸热、放热。",
+      "remember": "理解成“热量搬运工”更准确。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S004"
+      ],
+      "tags": [
+        "空调",
+        "制冷"
+      ],
+      "related_concept_ids": [
+        "LB072",
+        "LB147",
+        "LB112",
+        "LB090"
+      ]
+    },
+    {
+      "id": "LB072",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB072",
+      "title": "冰箱也不是“制造冷”",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "冰箱通过制冷循环把箱内热量搬出去。",
+      "you_might_think": "“冰箱里面天然会产生冷。”",
+      "reality": "制冷系统最终把热量排到厨房空气里，所以冰箱背部/侧面的温度会升高。",
+      "why": "热力学过程把热从低温空间转移到高温环境。",
+      "remember": "冰箱是在搬热。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S004",
+        "S003"
+      ],
+      "tags": [
+        "冰箱",
+        "制冷"
+      ],
+      "related_concept_ids": [
+        "LB073",
+        "LB071",
+        "LB147",
+        "LB113"
+      ]
+    },
+    {
+      "id": "LB073",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB073",
+      "title": "冰箱背后为什么会热？因为热被排到那里",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "制冷系统吸走食物空间的热量，也需要把这些热量和压缩机产生的热排出去。",
+      "you_might_think": "“冰箱后面热说明它坏了。”",
+      "reality": "适度发热通常是正常工作过程的一部分。",
+      "why": "能量不会凭空消失，制冷只是重新分配热量。",
+      "remember": "冷端吸热，热端放热。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S004"
+      ],
+      "tags": [
+        "冰箱",
+        "散热",
+        "热力学"
+      ],
+      "related_concept_ids": [
+        "LB072",
+        "LB070",
+        "LB157",
+        "LB113"
+      ]
+    },
+    {
+      "id": "LB074",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB074",
+      "title": "电磁炉不是“玻璃板自己发热煮锅”",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "电磁炉利用交变磁场在兼容锅具中产生感应电流并发热。",
+      "you_might_think": "“玻璃板像电热丝一样直接把锅加热。”",
+      "reality": "主要发热的是锅具本身，玻璃表面多来自锅具传热。",
+      "why": "电磁感应把电能以电流形式耦合到锅具。",
+      "remember": "不是火，也不是传统电热丝。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S031"
+      ],
+      "tags": [
+        "电磁炉",
+        "电磁感应"
+      ],
+      "related_concept_ids": [
+        "LB090",
+        "LB089",
+        "LB088",
+        "LB087"
+      ]
+    },
+    {
+      "id": "LB075",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB075",
+      "title": "微波炉不是“从里面把食物凭空煮熟”",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "微波炉通过电磁波与食物中的极性分子等相互作用产生加热。",
+      "you_might_think": "“微波是一种神奇的热射线。”",
+      "reality": "加热与食物成分、含水量、形状和容器有关。",
+      "why": "电磁场使分子运动和介电损耗转化为热。",
+      "remember": "微波加热仍然遵守能量守恒和热传导规律。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "微波炉",
+        "电磁波"
+      ],
+      "related_concept_ids": [
+        "LB077",
+        "LB090",
+        "LB089",
+        "LB088"
+      ]
+    },
+    {
+      "id": "LB076",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB076",
+      "title": "微波炉不会让食物“变成放射性物质”",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "家用微波炉使用的是非电离辐射；正常使用不会把食物变成放射性物质。",
+      "you_might_think": "“微波=核辐射，所以食品会带辐射。”",
+      "reality": "微波和X射线、伽马射线属于不同能区。",
+      "why": "“辐射”是一个很大的物理分类，是否能电离物质取决于能量。",
+      "remember": "别把所有“辐射”都当成核辐射。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "微波",
+        "辐射"
+      ],
+      "related_concept_ids": [
+        "LB090",
+        "LB089",
+        "LB088",
+        "LB087"
+      ]
+    },
+    {
+      "id": "LB077",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB077",
+      "title": "微波炉门上的金属网不是装饰",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "门上的金属网孔尺寸和电磁波波长关系决定其能抑制微波泄漏，同时允许可见光进入。",
+      "you_might_think": "“门网只是为了安全美观。”",
+      "reality": "它是微波炉屏蔽结构的一部分。",
+      "why": "导体表面对特定电磁波频段具有屏蔽作用。",
+      "remember": "透明不等于对所有电磁波都透明。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003"
+      ],
+      "tags": [
+        "微波炉",
+        "电磁屏蔽"
+      ],
+      "related_concept_ids": [
+        "LB075",
+        "LB090",
+        "LB089",
+        "LB088"
+      ]
+    },
+    {
+      "id": "LB078",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB078",
+      "title": "电水壶会自动断电是因为温控检测到了沸腾相关的热状态",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "很多电水壶通过温控器和蒸汽/温度变化触发断电。",
+      "you_might_think": "“水一冒泡，插头就自己断电。”",
+      "reality": "断电由机械或电子温控结构完成，不是“水自己切断电流”。",
+      "why": "温度达到设定区间后，开关机构状态改变。",
+      "remember": "自动断电的核心是温度检测。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "电水壶",
+        "温控"
+      ],
+      "related_concept_ids": [
+        "LB090",
+        "LB089",
+        "LB088",
+        "LB087"
+      ]
+    },
+    {
+      "id": "LB079",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB079",
+      "title": "烟雾报警器检测的不是“火焰”，而是烟粒子等特征",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "家用烟雾报警器常通过光电或离子化等方式检测火灾烟雾特征。",
+      "you_might_think": "“它看到火苗才报警。”",
+      "reality": "它可以在火焰肉眼可见之前对烟雾做出响应。",
+      "why": "不同传感器对烟粒子的物理性质进行检测。",
+      "remember": "报警器的价值就在于让人更早知道。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S030",
+        "S029"
+      ],
+      "tags": [
+        "烟雾报警器",
+        "火灾"
+      ],
+      "related_concept_ids": [
+        "LB090",
+        "LB089",
+        "LB088",
+        "LB087"
+      ]
+    },
+    {
+      "id": "LB080",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB080",
+      "title": "一氧化碳报警器和烟雾报警器不是一回事",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "烟雾报警器主要针对烟雾，CO 报警器针对一氧化碳。",
+      "you_might_think": "“装一个烟雾报警器就能防所有火灾和中毒。”",
+      "reality": "两者监测的危险物不同。",
+      "why": "CO 是一种无色、无味的有毒气体，不一定伴随明显烟雾。",
+      "remember": "家庭安全最好按风险配置不同传感器。",
+      "evidence_level": "very_strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S027",
+        "S028"
+      ],
+      "tags": [
+        "一氧化碳",
+        "报警器"
+      ],
+      "related_concept_ids": [
+        "LB082",
+        "LB081",
+        "LB090",
+        "LB089"
+      ]
+    },
+    {
+      "id": "LB081",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB081",
+      "title": "一氧化碳中毒闻不到味道",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "CO 是无色、无味的有毒气体，人不能靠嗅觉发现。",
+      "you_might_think": "“闻到煤气味才说明有CO危险。”",
+      "reality": "CO 常来自燃料不完全燃烧，可能在没有明显气味时造成中毒。",
+      "why": "CO 本身没有可靠的可感知气味。",
+      "remember": "不要用鼻子当CO报警器。",
+      "evidence_level": "very_strong",
+      "risk_level": "critical",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S027",
+        "S028"
+      ],
+      "tags": [
+        "一氧化碳",
+        "中毒"
+      ],
+      "related_concept_ids": [
+        "LB082",
+        "LB080",
+        "LB090",
+        "LB089"
+      ]
+    },
+    {
+      "id": "LB082",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB082",
+      "title": "燃气火焰和CO不是一回事",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "天然气泄漏与燃烧产生CO是两个不同风险；正常完全燃烧主要形成二氧化碳和水，而不完全燃烧可能产生CO。",
+      "you_might_think": "“闻到燃气味就等于CO。”",
+      "reality": "CO 需要另行考虑燃烧过程和通风问题。",
+      "why": "燃料的化学燃烧状态决定产物。",
+      "remember": "燃气泄漏、燃烧不完全、CO 中毒要分开理解。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S027",
+        "S029"
+      ],
+      "tags": [
+        "燃气",
+        "一氧化碳"
+      ],
+      "related_concept_ids": [
+        "LB081",
+        "LB080",
+        "LB090",
+        "LB089"
+      ]
+    },
+    {
+      "id": "LB083",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB083",
+      "title": "停电时发电机最危险的不是“没电”，而是CO和火灾风险",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "燃油发电机会产生大量CO，不能在室内、车库等封闭空间使用。",
+      "you_might_think": "“把发电机放车库里，开门通风就行。”",
+      "reality": "CPSC 建议发电机在室外、远离住宅等位置使用，并使尾气远离建筑物。",
+      "why": "发动机燃烧燃料会产生CO；半封闭空间仍可能快速积累。",
+      "remember": "发电机永远把排气当成危险源处理。",
+      "evidence_level": "very_strong",
+      "risk_level": "critical",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S028"
+      ],
+      "tags": [
+        "发电机",
+        "停电",
+        "CO"
+      ],
+      "related_concept_ids": [
+        "LB090",
+        "LB089",
+        "LB088",
+        "LB087"
+      ]
+    },
+    {
+      "id": "LB084",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB084",
+      "title": "电源插排不是“插孔越多，功率就越大”",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "插排只是把一个供电点分出多个接口，不会凭空增加电网可用功率。",
+      "you_might_think": "“十孔插排=可以同时大功率用十台设备。”",
+      "reality": "总负载仍受线路、插座、插排和断路器额定值限制。",
+      "why": "并联增加的是连接点，不是电源容量。",
+      "remember": "插座数量≠供电能力。",
+      "evidence_level": "moderate",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S029"
+      ],
+      "tags": [
+        "插排",
+        "功率",
+        "用电安全"
+      ],
+      "related_concept_ids": [
+        "LB085",
+        "LB090",
+        "LB089",
+        "LB088"
+      ]
+    },
+    {
+      "id": "LB085",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB085",
+      "title": "断路器跳闸不是“家里电坏了”，而是在保护线路",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "断路器在检测到过载或短路等异常电流条件时断开电路。",
+      "you_might_think": "“跳闸说明电器坏了。”",
+      "reality": "它可能是在避免导线过热、设备损坏和火灾。",
+      "why": "电流过大时线路发热增加，保护装置会切断供电。",
+      "remember": "经常跳闸要找原因，不要反复硬合。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S029"
+      ],
+      "tags": [
+        "断路器",
+        "用电安全"
+      ],
+      "related_concept_ids": [
+        "LB086",
+        "LB084",
+        "LB090",
+        "LB089"
+      ]
+    },
+    {
+      "id": "LB086",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB086",
+      "title": "漏电保护和过载保护不是同一种保护",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "RCD/GFCI 一类装置关注电流是否通过异常路径泄漏，过载保护则主要处理电流过大。",
+      "you_might_think": "“只要有断路器，就能解决所有触电问题。”",
+      "reality": "不同保护装置解决不同故障模式。",
+      "why": "电气安全是多层保护。",
+      "remember": "看懂配电箱上的不同保护功能很重要。",
+      "evidence_level": "moderate",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S029"
+      ],
+      "tags": [
+        "漏电保护",
+        "断路器"
+      ],
+      "related_concept_ids": [
+        "LB085",
+        "LB090",
+        "LB089",
+        "LB088"
+      ]
+    },
+    {
+      "id": "LB087",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB087",
+      "title": "LED灯省电的关键不是“更亮”，而是更高效地产生光",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "LED 将更多输入电能转成可用光，通常比传统白炽灯更高效。",
+      "you_might_think": "“LED只是更白，所以省电。”",
+      "reality": "省电主要来自光电转换和散热效率等差异。",
+      "why": "白炽灯大量能量最终以热形式散失。",
+      "remember": "看流明和功率，不只看瓦数。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S044",
+        "S003"
+      ],
+      "tags": [
+        "LED",
+        "照明",
+        "能效"
+      ],
+      "related_concept_ids": [
+        "LB088",
+        "LB090",
+        "LB089",
+        "LB086"
+      ]
+    },
+    {
+      "id": "LB088",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB088",
+      "title": "白炽灯很热，是因为大量能量最终变成了热",
+      "domain": "home",
+      "angle": "explanation",
+      "one_line": "白炽灯依靠高温灯丝发光，大量能量以热形式散失。",
+      "you_might_think": "“灯泡热只是坏掉了。”",
+      "reality": "高温本身就是其发光工作机制的一部分。",
+      "why": "热辐射与可见光同时产生，但光只占能量的一部分。",
+      "remember": "灯泡发热是工作原理，不只是故障。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S044"
+      ],
+      "tags": [
+        "白炽灯",
+        "能效"
+      ],
+      "related_concept_ids": [
+        "LB087",
+        "LB090",
+        "LB089",
+        "LB086"
+      ]
+    },
+    {
+      "id": "LB089",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB089",
+      "title": "加湿器不是越湿越好",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "湿度过高会促进霉菌等问题；不同环境应控制在适合的范围。",
+      "you_might_think": "“空气越湿，嗓子越舒服，所以一直加湿。”",
+      "reality": "EPA 的室内空气质量资料强调湿气和霉菌控制的重要性。",
+      "why": "过高湿度改变材料表面水分条件，为霉菌提供机会。",
+      "remember": "加湿的目标是合适，不是最大。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S025",
+        "S029"
+      ],
+      "tags": [
+        "加湿器",
+        "湿度",
+        "霉菌"
+      ],
+      "related_concept_ids": [
+        "LB090",
+        "LB069",
+        "LB066",
+        "LB156"
+      ]
+    },
+    {
+      "id": "LB090",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB090",
+      "title": "霉味解决不了，优先找水分来源",
+      "domain": "home",
+      "angle": "misconception",
+      "one_line": "净化器或香氛可以掩盖气味，但不能消除导致霉菌生长的潮湿源。",
+      "you_might_think": "“味道没了=霉菌问题解决。”",
+      "reality": "先找漏水、冷凝、渗水等湿源并处理。",
+      "why": "霉菌需要水分条件才能持续生长。",
+      "remember": "处理霉菌要先处理水，不要只处理味道。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S025"
+      ],
+      "tags": [
+        "霉菌",
+        "潮湿",
+        "空气"
+      ],
+      "related_concept_ids": [
+        "LB089",
+        "LB066",
+        "LB015",
+        "LB014"
+      ]
+    },
+    {
+      "id": "LB091",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB091",
+      "title": "Wi‑Fi不是互联网本身",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "Wi‑Fi 是设备接入局域网络的一种无线方式，互联网是更大的网络系统。",
+      "you_might_think": "“家里Wi‑Fi坏了=互联网坏了。”",
+      "reality": "你可能只是失去了本地无线连接，宽带线路本身可能正常。",
+      "why": "设备、路由器、宽带链路和互联网服务是不同层次。",
+      "remember": "Wi‑Fi是“怎么接入”，互联网是“连到哪里”。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "WiFi",
+        "互联网"
+      ],
+      "related_concept_ids": [
+        "LB105",
+        "LB092",
+        "LB120",
+        "LB119"
+      ]
+    },
+    {
+      "id": "LB092",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB092",
+      "title": "有信号不等于有互联网",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "手机信号可能代表连接到移动网络，不代表当前数据业务一定可用。",
+      "you_might_think": "“满格信号，所以网页肯定能开。”",
+      "reality": "还可能受拥塞、DNS、服务器、套餐或网络故障影响。",
+      "why": "“无线电连接存在”与“应用层服务可用”是不同层级。",
+      "remember": "网络故障要分层排查。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "手机信号",
+        "互联网"
+      ],
+      "related_concept_ids": [
+        "LB091",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB093",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB093",
+      "title": "GPS定位时，手机主要是“听”卫星，不是向卫星发送位置",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "传统GPS定位的核心是接收卫星发来的时间和轨道信息，再计算位置。",
+      "you_might_think": "“手机一直向GPS卫星发送我的位置。”",
+      "reality": "设备可以通过其他通信网络上传位置，但GPS卫星本身并不需要接收你的手机回传来完成基本定位。",
+      "why": "定位通过测量信号传播时间差等信息计算距离。",
+      "remember": "GPS接收器更像“收音机+计算器”。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S040"
+      ],
+      "tags": [
+        "GPS",
+        "定位"
+      ],
+      "related_concept_ids": [
+        "LB094",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB094",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB094",
+      "title": "GPS之所以能算位置，关键之一是时间测得非常准",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "接收机通过多个卫星信号的传播时间差估计距离，从而求位置。",
+      "you_might_think": "“GPS只是看地图把我圈出来。”",
+      "reality": "地图只是显示结果，定位本身需要无线电信号和时间测量。",
+      "why": "电磁波传播速度已知，传播时间就能转换成距离信息。",
+      "remember": "GPS核心不是地图，而是测距。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S040",
+        "S039"
+      ],
+      "tags": [
+        "GPS",
+        "时间",
+        "导航"
+      ],
+      "related_concept_ids": [
+        "LB093",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB095",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB095",
+      "title": "二维码不是加密",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "QR code主要是一种把数据编码成图形的方式，不天然意味着数据被加密。",
+      "you_might_think": "“扫二维码就说明信息已经安全加密。”",
+      "reality": "二维码里可以放网址、文本等；安全性取决于二维码指向的内容和系统。",
+      "why": "编码解决“如何表示数据”，加密解决“如何让未授权者读不懂”。",
+      "remember": "二维码=编码格式，不等于安全机制。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "二维码",
+        "编码",
+        "安全"
+      ],
+      "related_concept_ids": [
+        "LB120",
+        "LB119",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB096",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB096",
+      "title": "HTTPS说明传输链路加密，不等于网站一定可信",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "HTTPS能帮助保护浏览器与网站之间的传输内容，但骗子也可以拥有HTTPS网站。",
+      "you_might_think": "“地址栏有小锁=网站靠谱。”",
+      "reality": "还要看域名、商家身份、付款方式和页面内容。",
+      "why": "加密连接与网站是否诚实是两个问题。",
+      "remember": "小锁解决“传输”，不解决“对方是谁”。",
+      "evidence_level": "very_strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S035"
+      ],
+      "tags": [
+        "HTTPS",
+        "诈骗",
+        "网络安全"
+      ],
+      "related_concept_ids": [
+        "LB123",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB097",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB097",
+      "title": "无痕/隐身模式不是“匿名上网”",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "隐私模式主要减少本机浏览记录、Cookie 等痕迹，不会让网站、网络运营者或你登录的服务看不见你。",
+      "you_might_think": "“开无痕以后谁都不知道我访问过什么。”",
+      "reality": "网络侧仍可能看到连接信息；登录服务也照样知道账号操作。",
+      "why": "本地历史记录和网络可见性不是一回事。",
+      "remember": "隐身主要防“本机留痕”，不是隐身衣。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S035"
+      ],
+      "tags": [
+        "无痕模式",
+        "隐私"
+      ],
+      "related_concept_ids": [
+        "LB098",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB098",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB098",
+      "title": "VPN不是万能匿名器",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "VPN把部分网络流量交给VPN服务商转发，改变了你信任的中间方。",
+      "you_might_think": "“开VPN以后没人知道我是谁。”",
+      "reality": "网站仍可能通过账号、浏览器指纹、Cookie 等识别你。",
+      "why": "改变路由不等于消灭身份信息。",
+      "remember": "VPN是通信工具，不是匿名保证。",
+      "evidence_level": "moderate",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S035"
+      ],
+      "tags": [
+        "VPN",
+        "隐私"
+      ],
+      "related_concept_ids": [
+        "LB097",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB099",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB099",
+      "title": "同步不是完整备份",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "同步服务通常会把删除、覆盖等操作同步到其他设备。",
+      "you_might_think": "“照片都在云端，所以永远有备份。”",
+      "reality": "真正备份需要能在误删、勒索或账号问题时恢复到旧版本。",
+      "why": "同步强调“保持一致”，备份强调“能够恢复”。",
+      "remember": "重要数据至少保留独立可恢复副本。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039",
+        "S041"
+      ],
+      "tags": [
+        "备份",
+        "云同步"
+      ],
+      "related_concept_ids": [
+        "LB120",
+        "LB119",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB100",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB100",
+      "title": "密码越复杂越重要，但“每个网站都不同”同样重要",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "密码重复会造成“一处泄露、多处被撞库”。",
+      "you_might_think": "“我的主密码特别复杂，所以所有网站都用它没问题。”",
+      "reality": "每个重要服务最好使用独立密码，并配合密码管理器和多因素认证。",
+      "why": "攻击者常利用已泄露的邮箱+密码组合去尝试其他网站。",
+      "remember": "独立密码比“一个超级密码打天下”更关键。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S041",
+        "S042"
+      ],
+      "tags": [
+        "密码",
+        "撞库",
+        "账号安全"
+      ],
+      "related_concept_ids": [
+        "LB101",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB101",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB101",
+      "title": "多因素认证的第二步不是“多余步骤”",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "MFA 在密码泄露后仍可能提供额外防护。",
+      "you_might_think": "“密码已经很复杂，不需要验证码。”",
+      "reality": "安全性来自不同类型凭证的组合。",
+      "why": "攻击者即使拿到密码，也未必拿得到第二因素。",
+      "remember": "重要账号优先开MFA。",
+      "evidence_level": "very_strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S042"
+      ],
+      "tags": [
+        "MFA",
+        "账号安全"
+      ],
+      "related_concept_ids": [
+        "LB102",
+        "LB100",
+        "LB120",
+        "LB119"
+      ]
+    },
+    {
+      "id": "LB102",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB102",
+      "title": "短信验证码不是最强的第二因素",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "短信能提供额外保护，但存在SIM换卡、短信劫持等风险。",
+      "you_might_think": "“开了短信验证码就绝对安全。”",
+      "reality": "对高价值账号，认证器App或安全密钥通常能提供更强的保护。",
+      "why": "不同第二因素的攻击面不同。",
+      "remember": "MFA很好，但不同MFA强度不一样。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S042"
+      ],
+      "tags": [
+        "MFA",
+        "短信验证码"
+      ],
+      "related_concept_ids": [
+        "LB101",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB103",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB103",
+      "title": "手机快充不是“电压越高越快”",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "快充通常由充电器、手机和线材协商允许的电压、电流和功率。",
+      "you_might_think": "“插上更高瓦数充电器就一定跑满更高功率。”",
+      "reality": "设备会根据协议和自身限制决定实际功率。",
+      "why": "充电系统需要双方协商和保护。",
+      "remember": "充电器额定功率是上限之一，不是强制输入。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "快充",
+        "充电"
+      ],
+      "related_concept_ids": [
+        "LB120",
+        "LB119",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB104",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB104",
+      "title": "USB‑C只是接口形状，不保证同样的数据速度或充电能力",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "同样外形的USB‑C接口可能支持不同协议、速度、视频和功率。",
+      "you_might_think": "“都是USB‑C，所以性能一样。”",
+      "reality": "要看设备、线材和协议版本。",
+      "why": "连接器外形和通信协议是两层概念。",
+      "remember": "买线看规格，不只看插头长什么样。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "USB-C",
+        "数据线"
+      ],
+      "related_concept_ids": [
+        "LB120",
+        "LB119",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB105",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB105",
+      "title": "蓝牙不是Wi‑Fi的“同一个东西”",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "两者都使用无线电，但设计目标、功耗、距离和网络结构不同。",
+      "you_might_think": "“蓝牙就是低速Wi‑Fi。”",
+      "reality": "蓝牙更偏近距离设备连接；Wi‑Fi更偏局域网络接入。",
+      "why": "协议针对不同场景做了不同取舍。",
+      "remember": "都叫无线，不等于功能一样。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "蓝牙",
+        "WiFi"
+      ],
+      "related_concept_ids": [
+        "LB091",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB106",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB106",
+      "title": "降噪耳机不是真的“把声音吸走”",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "主动降噪会生成与环境噪声相位相反的声波，在耳边形成一定程度的抵消。",
+      "you_might_think": "“耳机在里面装了消音棉，把外面的声音全吸掉。”",
+      "reality": "主动降噪对持续、低频的噪声通常更擅长，对突发高频声音效果有限。",
+      "why": "声波可以叠加，相位相反时部分声压可相互抵消。",
+      "remember": "主动降噪=用声音抵消声音。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "降噪耳机",
+        "声波"
+      ],
+      "related_concept_ids": [
+        "LB164",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB107",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB107",
+      "title": "手机相机的“高像素”不是画质的全部",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "画质还受传感器面积、镜头、光学防抖、算法、曝光等影响。",
+      "you_might_think": "“像素越高，拍照一定越好。”",
+      "reality": "高像素可能带来裁切和细节优势，但不等于所有场景都更强。",
+      "why": "成像是光学、传感器和算法共同作用的结果。",
+      "remember": "像素是一个参数，不是总分。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "相机",
+        "像素"
+      ],
+      "related_concept_ids": [
+        "LB108",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB108",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB108",
+      "title": "数码变焦和光学变焦不是一回事",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "光学变焦通过镜头改变成像倍率，数码变焦主要是裁切/重采样。",
+      "you_might_think": "“10倍变焦都等于把远处放大10倍。”",
+      "reality": "没有足够光学信息时，数字放大不会凭空生成真实细节。",
+      "why": "图像处理可以放大像素，但不能完全替代光学分辨率。",
+      "remember": "看镜头和传感器，不只看“10倍”。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "相机",
+        "变焦"
+      ],
+      "related_concept_ids": [
+        "LB107",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB109",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB109",
+      "title": "电子墨水屏和普通LCD不是同一种显示原理",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "电子墨水通常利用带电微粒在电场作用下重新排列形成黑白图像，刷新方式与LCD不同。",
+      "you_might_think": "“电子书就是一块低亮度的LCD。”",
+      "reality": "它在静态阅读时功耗特征、观感和刷新方式不同。",
+      "why": "显示材料和成像机制不同。",
+      "remember": "电子墨水更像“移动颜料”，不是普通发光屏。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "电子墨水",
+        "显示"
+      ],
+      "related_concept_ids": [
+        "LB120",
+        "LB119",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB110",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB110",
+      "title": "电池“100%”不是固定不变的电量单位",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "电池百分比是管理系统对剩余能量和状态的估算，不是直接测量出的“百分之一格”。",
+      "you_might_think": "“显示100%，就一定有同样多的电能。”",
+      "reality": "估算会受温度、老化、负载和电量计校准影响。",
+      "why": "电池电压与剩余可用容量并不是线性关系。",
+      "remember": "电量百分比是估计值。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "电池",
+        "电量"
+      ],
+      "related_concept_ids": [
+        "LB120",
+        "LB119",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB111",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB111",
+      "title": "电动汽车减速时可以把部分动能变回电能",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "再生制动通过电机反向工作，把部分车辆动能转换成电能储回电池。",
+      "you_might_think": "“刹车就是把所有动能变成热。”",
+      "reality": "传统摩擦制动和再生制动可以共同工作。",
+      "why": "电机既能消耗电能产生运动，也能利用车轮带动发电。",
+      "remember": "EV刹车有“能量回收”这一层。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "电动车",
+        "再生制动"
+      ],
+      "related_concept_ids": [
+        "LB143",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB112",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB112",
+      "title": "热泵和空调在物理上是同一类技术",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "热泵通过制冷循环搬运热量；切换工作方向可以实现制冷或供暖。",
+      "you_might_think": "“空调制冷是一套技术，热泵供暖完全不同。”",
+      "reality": "它们共享热泵/制冷循环的核心物理原理。",
+      "why": "热量可以从低温侧被搬到高温侧，关键是机械做功。",
+      "remember": "热泵=搬运热量，而不是制造热或冷。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S045",
+        "S004"
+      ],
+      "tags": [
+        "热泵",
+        "空调"
+      ],
+      "related_concept_ids": [
+        "LB071",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB113",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB113",
+      "title": "冰箱把热量搬出去时也在“制造热”",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "压缩机耗电，系统不只排出冰箱内部吸收的热，还会把输入电能最终转成热。",
+      "you_might_think": "“冰箱只是把热消灭了。”",
+      "reality": "厨房空气会接收到这些热量。",
+      "why": "能量守恒要求热量与输入功最终被排出。",
+      "remember": "冰箱后面发热是热力学的结果。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S004",
+        "S003"
+      ],
+      "tags": [
+        "冰箱",
+        "能量守恒"
+      ],
+      "related_concept_ids": [
+        "LB073",
+        "LB072",
+        "LB006",
+        "LB120"
+      ]
+    },
+    {
+      "id": "LB114",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB114",
+      "title": "电梯不是靠钢丝绳单独“硬拉”整部电梯",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "现代曳引电梯通过电机、曳引轮、钢丝绳与对重等系统平衡负载。",
+      "you_might_think": "“电机一直在把几十个人全重量硬拉上去。”",
+      "reality": "对重承担了一部分平衡，电机主要改变系统状态。",
+      "why": "平衡系统可以显著减少所需驱动力。",
+      "remember": "电梯的秘密之一是“配重”。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "电梯",
+        "机械"
+      ],
+      "related_concept_ids": [
+        "LB120",
+        "LB119",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB115",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB115",
+      "title": "抽水马桶不是“把水直接冲进地下”",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "冲厕时水流带动污物进入排水系统，存水弯等结构帮助隔绝下水道气体。",
+      "you_might_think": "“马桶只是一个大水桶，通下水管就完了。”",
+      "reality": "U形/存水弯中的水封能减少下水道气味进入室内。",
+      "why": "液柱形成水封，同时利用虹吸和流体运动排走污物。",
+      "remember": "马桶下面那弯曲的一段管子很重要。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "马桶",
+        "下水道",
+        "水封"
+      ],
+      "related_concept_ids": [
+        "LB120",
+        "LB119",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB116",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB116",
+      "title": "洗衣机不是“用水把衣服泡干净”那么简单",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "洗衣机综合利用机械搅动、洗涤剂、温度和时间把污物从纤维上移除。",
+      "you_might_think": "“水越多就越干净。”",
+      "reality": "洗净效果受机械作用、化学作用和时间共同影响。",
+      "why": "污渍需要被润湿、乳化、分散，再随水带走。",
+      "remember": "洗衣的关键是“机械+化学+时间”。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "洗衣机",
+        "洗涤剂"
+      ],
+      "related_concept_ids": [
+        "LB119",
+        "LB120",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB117",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB117",
+      "title": "洗碗机不是“把盘子泡一晚上”",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "喷淋、高温、水压、洗涤剂和程序控制共同完成清洁。",
+      "you_might_think": "“只要放够水，盘子就会自己干净。”",
+      "reality": "摆放位置、喷淋方向和洗涤剂都会影响效果。",
+      "why": "喷射水流提供机械能，洗涤剂降低油污与表面的结合。",
+      "remember": "洗碗机靠“水流路径”，不是水量越多越好。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "洗碗机",
+        "清洁"
+      ],
+      "related_concept_ids": [
+        "LB061",
+        "LB120",
+        "LB119",
+        "LB118"
+      ]
+    },
+    {
+      "id": "LB118",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB118",
+      "title": "吸尘器主要是制造压差并让空气带走颗粒",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "吸尘器用风机制造气流，让空气携带灰尘进入过滤系统。",
+      "you_might_think": "“吸尘器里面有一只看不见的手在吸灰。”",
+      "reality": "真正作用的是气流、压差、风道和过滤。",
+      "why": "空气从高压向低压运动形成流量，灰尘随气流进入集尘结构。",
+      "remember": "“吸力”本质上是空气流动。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "吸尘器",
+        "气流"
+      ],
+      "related_concept_ids": [
+        "LB120",
+        "LB119",
+        "LB117",
+        "LB116"
+      ]
+    },
+    {
+      "id": "LB119",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB119",
+      "title": "滚筒洗衣机不一定要装满才最省",
+      "domain": "technology",
+      "angle": "misconception",
+      "one_line": "不同洗衣机的能耗和用水逻辑不同，半满洗并不是简单等于“浪费一半资源”。",
+      "you_might_think": "“只要没装满，洗一次就是浪费。”",
+      "reality": "合理负载和合适程序通常比机械追求“塞满”更重要。",
+      "why": "现代机器会根据程序和负载调整部分用水、时间或能耗。",
+      "remember": "以说明书推荐负载为准，不要硬塞。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "洗衣机",
+        "能耗"
+      ],
+      "related_concept_ids": [
+        "LB116",
+        "LB120",
+        "LB118",
+        "LB117"
+      ]
+    },
+    {
+      "id": "LB120",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB120",
+      "title": "路由器不是“有Wi‑Fi就一定能上网”的万能盒子",
+      "domain": "technology",
+      "angle": "explanation",
+      "one_line": "路由器负责局域网络、地址分配和流量转发等；互联网连接还依赖上游线路和服务商。",
+      "you_might_think": "“重启路由器能解决所有网络问题。”",
+      "reality": "重启只是排除部分状态和连接问题。",
+      "why": "网络由多个层级组成：设备、局域网、路由、宽带接入、DNS、服务器。",
+      "remember": "排查网络要一层一层定位。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "路由器",
+        "网络"
+      ],
+      "related_concept_ids": [
+        "LB119",
+        "LB118",
+        "LB117",
+        "LB116"
+      ]
+    },
+    {
+      "id": "LB121",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB121",
+      "title": "免费试用不等于免费",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "很多试用会在到期后自动续费，如果不取消就开始收费。",
+      "you_might_think": "“写着免费，所以不会扣钱。”",
+      "reality": "FTC建议在注册前确认试用多久、何时取消、取消方式和自动续费条款。",
+      "why": "商业模式可能把“试用”设计成自动续费入口。",
+      "remember": "免费之前先看“之后每月多少钱”。",
+      "evidence_level": "very_strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S032"
+      ],
+      "tags": [
+        "免费试用",
+        "订阅"
+      ],
+      "related_concept_ids": [
+        "LB129",
+        "LB122",
+        "LB130",
+        "LB128"
+      ]
+    },
+    {
+      "id": "LB122",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB122",
+      "title": "自动续费最容易被忽略的是“什么时候取消”",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "真正的成本可能不在第一次付款，而在用户忘记取消后的连续扣款。",
+      "you_might_think": "“我不想用了，不用管它。”",
+      "reality": "应保留取消确认记录。",
+      "why": "负选项订阅把“不操作”设计成继续付费。",
+      "remember": "注册时就记住取消日期。",
+      "evidence_level": "very_strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S032",
+        "S033"
+      ],
+      "tags": [
+        "自动续费",
+        "订阅"
+      ],
+      "related_concept_ids": [
+        "LB129",
+        "LB121",
+        "LB130",
+        "LB128"
+      ]
+    },
+    {
+      "id": "LB123",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB123",
+      "title": "网页上有小锁不等于卖家可信",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "HTTPS保护浏览器到网站的加密连接，但诈骗网站也可以使用HTTPS。",
+      "you_might_think": "“有https就安全。”",
+      "reality": "还要核验域名、商家、支付方式、退换货信息。",
+      "why": "加密连接解决的是窃听风险的一部分，不是商家诚信。",
+      "remember": "小锁不是“可信商家认证”。",
+      "evidence_level": "very_strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S035"
+      ],
+      "tags": [
+        "HTTPS",
+        "网购"
+      ],
+      "related_concept_ids": [
+        "LB096",
+        "LB130",
+        "LB129",
+        "LB128"
+      ]
+    },
+    {
+      "id": "LB124",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB124",
+      "title": "五星评价不是“产品质量的科学测量”",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "评论可能被激励、刷量、操纵或选择性展示。",
+      "you_might_think": "“4.9分就是几乎完美。”",
+      "reality": "FTC建议看多来源、近期评论、评论者历史和异常评论集中出现等信号。",
+      "why": "评分平台的数据生成机制本身就可能有偏差。",
+      "remember": "评分是证据的一部分，不是证据全部。",
+      "evidence_level": "very_strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S034",
+        "S035"
+      ],
+      "tags": [
+        "评价",
+        "假评论"
+      ],
+      "related_concept_ids": [
+        "LB130",
+        "LB129",
+        "LB128",
+        "LB127"
+      ]
+    },
+    {
+      "id": "LB125",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB125",
+      "title": "促销价不等于真实便宜",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "比较商品时应该看实际成交价、单位价格和总成本，而不是只看“原价划掉多少”。",
+      "you_might_think": "“打七折一定赚到。”",
+      "reality": "参考价、包装规格、运费和附加费用都会影响真实成本。",
+      "why": "营销展示的是相对价格，消费者真正承担的是总支付。",
+      "remember": "先算单价和总价，再看折扣。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S033",
+        "S035"
+      ],
+      "tags": [
+        "促销",
+        "价格"
+      ],
+      "related_concept_ids": [
+        "LB130",
+        "LB129",
+        "LB128",
+        "LB127"
+      ]
+    },
+    {
+      "id": "LB126",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB126",
+      "title": "大包装不自动等于更便宜",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "大包装可能只是总价更高，单位重量/件数价格未必更低。",
+      "you_might_think": "“买大包装肯定划算。”",
+      "reality": "看每100g、每升、每件的价格。",
+      "why": "规模经济是否传递给消费者取决于定价策略。",
+      "remember": "比较单位价格。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S035",
+        "S012"
+      ],
+      "tags": [
+        "大包装",
+        "单位价格"
+      ],
+      "related_concept_ids": [
+        "LB130",
+        "LB129",
+        "LB128",
+        "LB127"
+      ]
+    },
+    {
+      "id": "LB127",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB127",
+      "title": "延长保修不是“免费延长原厂保障”那么简单",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "延保是额外合同，覆盖范围、免赔、人工、零件、期限都可能不同。",
+      "you_might_think": "“买了延保就和原厂保修一样。”",
+      "reality": "应逐条看排除项、服务方式和总价格。",
+      "why": "合同可以对风险边界作不同定义。",
+      "remember": "延保买的是一套风险转移合同。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S035"
+      ],
+      "tags": [
+        "延保",
+        "保修"
+      ],
+      "related_concept_ids": [
+        "LB128",
+        "LB130",
+        "LB129",
+        "LB126"
+      ]
+    },
+    {
+      "id": "LB128",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB128",
+      "title": "退款、退货、保修是三件不同的事",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "return、refund、warranty解决的问题不同，具体权利还取决于地区和商品类型。",
+      "you_might_think": "“有保修就一定能退货。”",
+      "reality": "先分清商品是否合格、是否想反悔、还是产品后来故障。",
+      "why": "不同规则针对不同消费场景。",
+      "remember": "遇到售后先问：我是退货、退款还是走保修？",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S035"
+      ],
+      "tags": [
+        "退货",
+        "退款",
+        "保修"
+      ],
+      "related_concept_ids": [
+        "LB127",
+        "LB130",
+        "LB129",
+        "LB126"
+      ]
+    },
+    {
+      "id": "LB129",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB129",
+      "title": "“需要输入银行卡才免费”是强烈的订阅警报",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "大量免费试用通过绑定支付方式实现自动续费。",
+      "you_might_think": "“先绑卡再说，反正免费。”",
+      "reality": "如果取消机制模糊或难找，应谨慎。",
+      "why": "商家需要付款凭据才能在试用结束后自动收费。",
+      "remember": "没有看懂取消方式，就先别注册。",
+      "evidence_level": "very_strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S032",
+        "S033"
+      ],
+      "tags": [
+        "订阅",
+        "支付"
+      ],
+      "related_concept_ids": [
+        "LB122",
+        "LB121",
+        "LB130",
+        "LB128"
+      ]
+    },
+    {
+      "id": "LB130",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB130",
+      "title": "“只有正面评价”的商品反而值得多看看",
+      "domain": "consumer",
+      "angle": "misconception",
+      "one_line": "真实商品体验通常会有差异，过于整齐的评价可能值得进一步调查。",
+      "you_might_think": "“全部五星说明最靠谱。”",
+      "reality": "FTC建议关注评论是否集中爆发、是否来自长期用户、是否存在激励。",
+      "why": "真实体验往往存在方差；异常一致性可能是选择性或操纵的结果。",
+      "remember": "看异常模式，不只看平均分。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S034"
+      ],
+      "tags": [
+        "评论",
+        "消费者"
+      ],
+      "related_concept_ids": [
+        "LB129",
+        "LB128",
+        "LB127",
+        "LB126"
+      ]
+    },
+    {
+      "id": "LB131",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB131",
+      "title": "信用卡只还最低还款通常不是“轻松无成本”",
+      "domain": "money",
+      "angle": "misconception",
+      "one_line": "如果没有免息宽限条件，未偿余额会继续产生利息；长期只还最低还款可能显著增加总成本。",
+      "you_might_think": "“最低还款就是银行允许我无成本慢慢还。”",
+      "reality": "最低还款只是满足当期最低要求，不代表没有利息。",
+      "why": "信用卡常按余额和日周期计算利息。",
+      "remember": "最低还款是下限，不是最优还款策略。",
+      "evidence_level": "very_strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S036"
+      ],
+      "tags": [
+        "信用卡",
+        "利息"
+      ],
+      "related_concept_ids": [
+        "LB132",
+        "LB135",
+        "LB134",
+        "LB133"
+      ]
+    },
+    {
+      "id": "LB132",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB132",
+      "title": "信用卡“额度”不是你的收入",
+      "domain": "money",
+      "angle": "misconception",
+      "one_line": "信用额度是授信上限，不是可以免费使用的钱。",
+      "you_might_think": "“银行给我10万额度，说明我有10万可以花。”",
+      "reality": "刷卡消费最终仍要还本金和可能产生的利息。",
+      "why": "信用本质上是提前使用未来收入的能力。",
+      "remember": "额度越高不等于财务能力越强。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S036"
+      ],
+      "tags": [
+        "信用卡",
+        "额度"
+      ],
+      "related_concept_ids": [
+        "LB131",
+        "LB135",
+        "LB134",
+        "LB133"
+      ]
+    },
+    {
+      "id": "LB133",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB133",
+      "title": "年化利率不是“每个月只收一次利息”",
+      "domain": "money",
+      "angle": "explanation",
+      "one_line": "很多信用产品使用周期利率计算，APR是用于比较融资成本的重要指标。",
+      "you_might_think": "“月利率×12就是全部成本。”",
+      "reality": "具体产品可能还包含费用或不同计息规则。",
+      "why": "复利和费用会让简单乘法失真。",
+      "remember": "看完整APR和费用，而不是只看月利率。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S036"
+      ],
+      "tags": [
+        "APR",
+        "贷款"
+      ],
+      "related_concept_ids": [
+        "LB135",
+        "LB134",
+        "LB132",
+        "LB131"
+      ]
+    },
+    {
+      "id": "LB134",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB134",
+      "title": "保险本质上是把大损失风险转给保险公司",
+      "domain": "money",
+      "angle": "explanation",
+      "one_line": "保险不是“稳赚投资”，核心是用保费换取特定风险下的赔付保障。",
+      "you_might_think": "“只要没出险，这钱就亏了。”",
+      "reality": "保险的价值体现在不确定的大损失得到转移。",
+      "why": "风险厌恶的人愿意为降低灾难性损失承担固定成本。",
+      "remember": "保险首先是风险管理。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S001"
+      ],
+      "tags": [
+        "保险",
+        "风险管理"
+      ],
+      "related_concept_ids": [
+        "LB135",
+        "LB133",
+        "LB132",
+        "LB131"
+      ]
+    },
+    {
+      "id": "LB135",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB135",
+      "title": "复利不只对投资有用，对债务同样危险",
+      "domain": "money",
+      "angle": "misconception",
+      "one_line": "利息滚入余额时，未偿还债务会越来越快增长。",
+      "you_might_think": "“只要每个月付一点点，利息没什么。”",
+      "reality": "长期高利率债务会形成显著总成本。",
+      "why": "利息本身会成为下一期计息基础。",
+      "remember": "复利是双刃剑。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global",
+        "US_note"
+      ],
+      "source_ids": [
+        "S036"
+      ],
+      "tags": [
+        "复利",
+        "债务"
+      ],
+      "related_concept_ids": [
+        "LB134",
+        "LB133",
+        "LB132",
+        "LB131"
+      ]
+    },
+    {
+      "id": "LB136",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB136",
+      "title": "轮胎侧壁上的数字不是你应该长期使用的胎压",
+      "domain": "transport",
+      "angle": "misconception",
+      "one_line": "车辆推荐胎压通常应看车门框、用户手册或厂家标签，而不是轮胎侧壁的最大允许压力。",
+      "you_might_think": "“胎侧写50 PSI，所以我打到50最安全。”",
+      "reality": "侧壁标识更多是轮胎自身额定信息，不等于车辆最佳冷胎胎压。",
+      "why": "车辆质量、悬架和轮胎匹配共同决定推荐胎压。",
+      "remember": "找车辆标签，不要照抄轮胎侧壁。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S038"
+      ],
+      "tags": [
+        "轮胎",
+        "胎压"
+      ],
+      "related_concept_ids": [
+        "LB138",
+        "LB137",
+        "LB150",
+        "LB149"
+      ]
+    },
+    {
+      "id": "LB137",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB137",
+      "title": "胎压不足会影响操控、发热和磨损",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "过低胎压会改变轮胎形变与接地状态，增加发热和磨损风险。",
+      "you_might_think": "“软一点更舒服，所以更安全。”",
+      "reality": "车辆制造商推荐胎压是综合安全和性能平衡后的设定。",
+      "why": "轮胎内部弯曲变形越大，产生的热量和能耗等可能增加。",
+      "remember": "胎压是安全参数，不是单纯舒适参数。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S038"
+      ],
+      "tags": [
+        "胎压",
+        "轮胎安全"
+      ],
+      "related_concept_ids": [
+        "LB138",
+        "LB136",
+        "LB150",
+        "LB149"
+      ]
+    },
+    {
+      "id": "LB138",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB138",
+      "title": "TPMS报警器不能替代定期检查胎压",
+      "domain": "transport",
+      "angle": "misconception",
+      "one_line": "胎压监测系统用于提醒异常，但不一定告诉你所有轮胎问题，也不能替代肉眼和压力表检查。",
+      "you_might_think": "“有TPMS就不用测胎压了。”",
+      "reality": "应根据车辆说明书检查胎压和系统状态。",
+      "why": "传感器有测量范围、精度和故障模式。",
+      "remember": "报警是最后一道提醒，不是全部维护。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S038"
+      ],
+      "tags": [
+        "TPMS",
+        "胎压"
+      ],
+      "related_concept_ids": [
+        "LB137",
+        "LB136",
+        "LB150",
+        "LB149"
+      ]
+    },
+    {
+      "id": "LB139",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB139",
+      "title": "ABS的核心价值之一是保持制动时的转向能力",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "ABS通过快速调节制动力避免车轮持续锁死，使驾驶者在紧急制动时更有机会保持转向控制。",
+      "you_might_think": "“ABS就是保证刹车距离一定最短。”",
+      "reality": "不同路面条件下停车距离会变化；ABS的重要目标之一是保持方向控制。",
+      "why": "锁死车轮后轮胎侧向抓地能力下降。",
+      "remember": "ABS不是魔法刹车，而是控制系统。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S037"
+      ],
+      "tags": [
+        "ABS",
+        "刹车"
+      ],
+      "related_concept_ids": [
+        "LB148",
+        "LB150",
+        "LB149",
+        "LB147"
+      ]
+    },
+    {
+      "id": "LB140",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB140",
+      "title": "安全气囊不能替代安全带",
+      "domain": "transport",
+      "angle": "misconception",
+      "one_line": "安全气囊属于约束系统的一部分，需要与安全带配合。",
+      "you_might_think": "“有六个气囊，后排不系也没关系。”",
+      "reality": "NHTSA资料明确把安全带、气囊和座椅/头枕等看成共同保护体系。",
+      "why": "气囊展开速度高，正确坐姿和安全带能帮助人体处于设计位置。",
+      "remember": "安全带是第一道约束，气囊是补充。",
+      "evidence_level": "very_strong",
+      "risk_level": "critical",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S037"
+      ],
+      "tags": [
+        "安全带",
+        "气囊"
+      ],
+      "related_concept_ids": [
+        "LB149",
+        "LB150",
+        "LB148",
+        "LB147"
+      ]
+    },
+    {
+      "id": "LB141",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB141",
+      "title": "头枕不是“让你舒服靠头”的装饰",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "正确位置的头枕有助于降低某些碰撞中头颈过度运动的风险。",
+      "you_might_think": "“头枕高低无所谓，舒服就行。”",
+      "reality": "头枕应按车辆说明调整，尤其避免过低。",
+      "why": "头部支撑位置影响碰撞时颈部运动。",
+      "remember": "头枕是安全部件。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S037"
+      ],
+      "tags": [
+        "头枕",
+        "车辆安全"
+      ],
+      "related_concept_ids": [
+        "LB150",
+        "LB149",
+        "LB148",
+        "LB147"
+      ]
+    },
+    {
+      "id": "LB142",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB142",
+      "title": "巡航控制不会自动替你承担驾驶责任",
+      "domain": "transport",
+      "angle": "misconception",
+      "one_line": "普通定速巡航和各种驾驶辅助系统都有不同能力边界，驾驶员仍需监控道路。",
+      "you_might_think": "“开了辅助驾驶就可以刷手机。”",
+      "reality": "驾驶辅助不是自动驾驶；系统可能看不到、判断错或在边界条件下退出。",
+      "why": "传感器和算法都存在设计范围和失效模式。",
+      "remember": "辅助驾驶=辅助，不是“无人驾驶”。",
+      "evidence_level": "strong",
+      "risk_level": "critical",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S037"
+      ],
+      "tags": [
+        "驾驶辅助",
+        "巡航"
+      ],
+      "related_concept_ids": [
+        "LB150",
+        "LB149",
+        "LB148",
+        "LB147"
+      ]
+    },
+    {
+      "id": "LB143",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB143",
+      "title": "电动车冬天续航下降，不只是“天气冷把电冻没了”",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "低温会影响电池化学反应，还会增加座舱取暖能耗；因此续航可能下降。",
+      "you_might_think": "“电池容量突然凭空消失。”",
+      "reality": "温度、驾驶工况、暖风使用等共同影响实际续航。",
+      "why": "电池内阻、可用功率和热管理都会随温度变化。",
+      "remember": "冬季用车要把电池温控和暖风一起考虑。",
+      "evidence_level": "moderate",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "电动车",
+        "冬季续航"
+      ],
+      "related_concept_ids": [
+        "LB111",
+        "LB150",
+        "LB149",
+        "LB148"
+      ]
+    },
+    {
+      "id": "LB144",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB144",
+      "title": "发动机冷却液不只是“给水箱加水”",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "冷却系统需要在不同温度下防冻、防沸，并保护金属和密封件。",
+      "you_might_think": "“缺液加自来水，永远一样。”",
+      "reality": "应按照车辆说明书使用对应冷却液和维护方案。",
+      "why": "水的冰点、沸点和腐蚀性与专用冷却液体系不同。",
+      "remember": "冷却液是工程配方，不是普通饮用水。",
+      "evidence_level": "moderate",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "冷却液",
+        "汽车"
+      ],
+      "related_concept_ids": [
+        "LB146",
+        "LB145",
+        "LB150",
+        "LB149"
+      ]
+    },
+    {
+      "id": "LB145",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB145",
+      "title": "雨刷玻璃水不是“加什么水都一样”",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "专用玻璃水包含清洁、润湿、防冻等功能配方；不同季节和地区需求不同。",
+      "you_might_think": "“自来水和玻璃水完全一样。”",
+      "reality": "普通水可能结冰、留下矿物沉积或清洁能力不足。",
+      "why": "车辆液路需要兼顾温度和表面张力等条件。",
+      "remember": "玻璃水是功能液体，不只是“水”。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "玻璃水",
+        "汽车"
+      ],
+      "related_concept_ids": [
+        "LB146",
+        "LB144",
+        "LB150",
+        "LB149"
+      ]
+    },
+    {
+      "id": "LB146",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB146",
+      "title": "汽车油耗不是发动机一个部件决定的",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "油耗受车重、空气阻力、轮胎、速度、路况、驾驶方式、空调负载等共同影响。",
+      "you_might_think": "“换大排量/小排量就能直接决定一切。”",
+      "reality": "车辆整体系统共同决定能耗。",
+      "why": "动力系统需要克服滚动阻力、风阻和加速所需的能量。",
+      "remember": "油耗是系统结果，不是单个零件的标签。",
+      "evidence_level": "moderate",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S039"
+      ],
+      "tags": [
+        "油耗",
+        "汽车"
+      ],
+      "related_concept_ids": [
+        "LB145",
+        "LB144",
+        "LB150",
+        "LB149"
+      ]
+    },
+    {
+      "id": "LB147",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB147",
+      "title": "车里开空调并不是“把冷气存起来”",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "汽车空调同样通过制冷循环把热量从车厢搬到车外。",
+      "you_might_think": "“冷气是从一个储气罐里放出来的。”",
+      "reality": "制冷剂在系统内循环，核心是吸热和放热。",
+      "why": "空调压缩机驱动制冷剂在不同压力状态下循环。",
+      "remember": "汽车空调也是热量搬运工。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S004"
+      ],
+      "tags": [
+        "汽车空调",
+        "制冷"
+      ],
+      "related_concept_ids": [
+        "LB072",
+        "LB071",
+        "LB150",
+        "LB149"
+      ]
+    },
+    {
+      "id": "LB148",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB148",
+      "title": "刹车盘发热是能量转换，不只是“刹车片磨坏了”",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "车辆动能在摩擦制动中主要转化为热能。",
+      "you_might_think": "“刹车一热说明刹车出故障了。”",
+      "reality": "正常制动会产生热；持续高强度制动时过热才可能影响性能。",
+      "why": "动能必须通过某种方式被耗散，摩擦制动就是把它变成热。",
+      "remember": "刹车热来自把速度变成热。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S037"
+      ],
+      "tags": [
+        "刹车",
+        "能量"
+      ],
+      "related_concept_ids": [
+        "LB139",
+        "LB150",
+        "LB149",
+        "LB147"
+      ]
+    },
+    {
+      "id": "LB149",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB149",
+      "title": "安全带预紧器和限力器与“普通一条带子”不同",
+      "domain": "transport",
+      "angle": "explanation",
+      "one_line": "现代约束系统会在碰撞初期快速收紧安全带，并控制带体受力。",
+      "you_might_think": "“安全带就是一根布带。”",
+      "reality": "不同车辆可能配有预紧器、限力器等结构。",
+      "why": "约束系统要在固定人体和减少过大载荷之间取得平衡。",
+      "remember": "安全带本身就是复杂的工程系统。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S037"
+      ],
+      "tags": [
+        "安全带",
+        "预紧器"
+      ],
+      "related_concept_ids": [
+        "LB140",
+        "LB150",
+        "LB148",
+        "LB147"
+      ]
+    },
+    {
+      "id": "LB150",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB150",
+      "title": "汽车车身的“吸能区”不是为了让车更脆",
+      "domain": "transport",
+      "angle": "misconception",
+      "one_line": "前后部的可控变形区用于吸收碰撞能量，乘员舱则更强调保持生存空间。",
+      "you_might_think": "“撞击时车越硬越安全。”",
+      "reality": "现代车辆通常把“可控变形”和“乘员舱强度”同时设计。",
+      "why": "碰撞能量需要被耗散，完全刚性的结构会把更多载荷传给乘员。",
+      "remember": "安全车身不是“全车越硬越好”。",
+      "evidence_level": "strong",
+      "risk_level": "high",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S037"
+      ],
+      "tags": [
+        "车身结构",
+        "碰撞安全"
+      ],
+      "related_concept_ids": [
+        "LB149",
+        "LB148",
+        "LB147",
+        "LB146"
+      ]
+    },
+    {
+      "id": "LB151",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB151",
+      "title": "金属摸起来比木头冷，不代表它真的温度更低",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "同一室温下，金属通常让手感觉更冷，因为它把热从手上传走得更快。",
+      "you_might_think": "“摸起来冷=它温度低。”",
+      "reality": "触感反映的是热交换速度，不只是物体温度。",
+      "why": "导热系数不同会改变皮肤散热速度。",
+      "remember": "手的感觉是热流计，不是精密温度计。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "热传导",
+        "金属",
+        "木头"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB152",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB152",
+      "title": "冰会浮在水上，是因为固态水的密度反而更低",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "水结冰时晶体结构让分子排列更疏松，密度降低。",
+      "you_might_think": "“所有固体都比液体密。”",
+      "reality": "水的这种反常性质是自然环境的重要基础。",
+      "why": "氢键使冰形成开放晶格结构。",
+      "remember": "冰比液态水轻，所以会浮。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "冰",
+        "密度",
+        "水"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB153",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB153",
+      "title": "水在高海拔更容易沸腾，是因为大气压更低",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "沸腾条件与液体蒸气压达到外界压力有关。",
+      "you_might_think": "“山上温度低，所以水一定在更低温度下蒸发。”",
+      "reality": "高海拔气压下降，会降低沸点。",
+      "why": "液体内部形成气泡需要克服外界压力。",
+      "remember": "沸点不是永恒固定的数字。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "沸点",
+        "海拔",
+        "压力"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB154",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB154",
+      "title": "蒸汽烫伤可能比同温度的热水更严重",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "水蒸气凝结成液态水时会释放汽化潜热，把更多能量传给皮肤。",
+      "you_might_think": "“100°C蒸汽和100°C热水只差一点点。”",
+      "reality": "蒸汽携带的相变能量使烫伤风险更复杂。",
+      "why": "相变伴随大量能量释放。",
+      "remember": "蒸汽不是“普通热空气”。",
+      "evidence_level": "strong",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003"
+      ],
+      "tags": [
+        "蒸汽",
+        "烫伤",
+        "潜热"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB155",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB155",
+      "title": "玻璃会突然裂，不一定是因为“它很薄”",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "温差造成的热应力可能导致玻璃局部膨胀不一致，从而开裂。",
+      "you_might_think": "“玻璃裂了就是质量差。”",
+      "reality": "材料、温差、划伤和边缘缺陷都可能影响破裂。",
+      "why": "热胀冷缩在材料内部产生应力。",
+      "remember": "热冲击是真实物理现象。",
+      "evidence_level": "moderate",
+      "risk_level": "medium",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003"
+      ],
+      "tags": [
+        "玻璃",
+        "热胀冷缩"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB156",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB156",
+      "title": "湿度高时觉得更热，主要是汗液蒸发受阻",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "高湿空气减少汗液蒸发的驱动力，人体散热效率下降。",
+      "you_might_think": "“湿度本身就是额外的热量。”",
+      "reality": "高温高湿尤其容易增加体感闷热。",
+      "why": "蒸发是人体散热的重要途径，而空气越湿，继续蒸发越困难。",
+      "remember": "体感温度和气温不是一回事。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "湿度",
+        "体感温度"
+      ],
+      "related_concept_ids": [
+        "LB089",
+        "LB069",
+        "LB170",
+        "LB169"
+      ]
+    },
+    {
+      "id": "LB157",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB157",
+      "title": "风寒效应不是把空气“变得更冷”",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "风加快人体与环境之间的对流和蒸发散热，让皮肤失热更快。",
+      "you_might_think": "“风会把气温从10°C吹到0°C。”",
+      "reality": "真实空气温度没有因为风而降低；人体失热速度变快。",
+      "why": "对流换热取决于空气运动速度。",
+      "remember": "风寒是人体热损失的变化，不是温度计读数变化。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "风寒",
+        "散热"
+      ],
+      "related_concept_ids": [
+        "LB073",
+        "LB070",
+        "LB170",
+        "LB169"
+      ]
+    },
+    {
+      "id": "LB158",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB158",
+      "title": "季节不是因为“冬天离太阳更远”造成的",
+      "domain": "science",
+      "angle": "misconception",
+      "one_line": "地球公转轨道略有偏心，但季节的主要原因是地轴倾角导致太阳高度和日照时长变化。",
+      "you_might_think": "“北半球冬天就是离太阳最远。”",
+      "reality": "不同半球甚至同一时间季节相反，这与倾角更符合。",
+      "why": "太阳辐射入射角和日照时长改变了单位面积获得的能量。",
+      "remember": "季节的核心变量是地轴倾角。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "季节",
+        "地球",
+        "太阳"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB159",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB159",
+      "title": "月相不是“地球挡住了月亮的光”",
+      "domain": "science",
+      "angle": "misconception",
+      "one_line": "普通月相来自太阳、地球、月球相对位置变化；只有月食才涉及地球影子落到月面。",
+      "you_might_think": "“月牙就是地球影子。”",
+      "reality": "月亮本身不发可见光，而是在反射太阳光。",
+      "why": "我们能看到的明亮部分随着几何位置改变。",
+      "remember": "月相和月食是两件不同的事。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "月相",
+        "月食"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB160",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB160",
+      "title": "彩虹不是“水滴把光染了颜色”",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "彩虹主要来自阳光在水滴中的折射、色散和内部反射。",
+      "you_might_think": "“雨水本身是七彩的。”",
+      "reality": "不同波长的光折射角略有差异，从而分开。",
+      "why": "光在不同介质中传播速度变化导致折射，材料色散再把白光展开。",
+      "remember": "白光本身就包含多种可见波长。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "彩虹",
+        "光学"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB161",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB161",
+      "title": "天空看起来蓝，是大气对短波光更强的散射",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "瑞利散射使较短波长的可见光在大气中更容易向各方向散射。",
+      "you_might_think": "“空气本身是蓝色的。”",
+      "reality": "从地面看，来自各方向的散射蓝光更明显。",
+      "why": "光与远小于波长的气体分子相互作用会产生强烈的波长依赖散射。",
+      "remember": "天空的颜色来自光与空气的相互作用。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "天空",
+        "瑞利散射"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB162",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB162",
+      "title": "夕阳偏红不是太阳突然变成红色",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "日落时光穿过更长的大气路径，短波光被散射得更多，直达光中长波成分相对更显著。",
+      "you_might_think": "“太阳变红了。”",
+      "reality": "真正变化的是光穿过大气的路径与散射。",
+      "why": "更长的传播路径会加强短波光散射。",
+      "remember": "夕阳的红是大气滤镜效果。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "夕阳",
+        "散射"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB163",
+      "module": "blindspot",
+      "type": "misconception",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB163",
+      "title": "声音不能像光一样穿过真空",
+      "domain": "science",
+      "angle": "misconception",
+      "one_line": "声音是机械波，需要介质中的粒子相互传递振动。",
+      "you_might_think": "“太空很安静是因为声音太小。”",
+      "reality": "真空几乎没有介质，所以常规声波无法传播。",
+      "why": "声波需要物质介质来传递压力变化。",
+      "remember": "没有介质，声音就无处可传。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "声音",
+        "真空"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB164",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB164",
+      "title": "噪声消除不是把声能“删除”，而是用反相声波抵消部分波形",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "主动降噪利用叠加原理产生与噪声相反的声学信号。",
+      "you_might_think": "“耳机里面有个吸音海绵把声音吃掉了。”",
+      "reality": "主动降噪对不同频段和不同噪声类型效果不同。",
+      "why": "波的叠加可以产生部分相消。",
+      "remember": "消噪是波形工程，不是魔法消失。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "噪声",
+        "降噪",
+        "声波"
+      ],
+      "related_concept_ids": [
+        "LB106",
+        "LB170",
+        "LB169",
+        "LB168"
+      ]
+    },
+    {
+      "id": "LB165",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB165",
+      "title": "镜子不是“里面藏了一层画面”",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "镜面反射来自平整表面使入射光按规律反射。",
+      "you_might_think": "“镜子里真的有一个和你一样的人。”",
+      "reality": "镜子只是重新定向光线，让大脑通过光线方向形成虚像。",
+      "why": "反射光进入眼睛后，大脑将其延伸解释为空间中的像。",
+      "remember": "镜子显示的是光的反射信息，不是复制了一个人。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "镜子",
+        "反射"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB166",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB166",
+      "title": "眼镜片不是“把视力变好”，而是在改变入眼光线的成像条件",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "近视、远视、散光矫正镜片通过改变光线传播路径，使影像更合适地落在视网膜上。",
+      "you_might_think": "“戴眼镜后眼睛本身就被治好了。”",
+      "reality": "矫正镜片主要是在视觉系统外部改变光学条件。",
+      "why": "折射率和镜面曲率改变光线会聚方式。",
+      "remember": "眼镜主要是光学补偿器。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "眼镜",
+        "屈光"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB169",
+        "LB168",
+        "LB167"
+      ]
+    },
+    {
+      "id": "LB167",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB167",
+      "title": "肥皂水泡泡不是“水被打进空气”那么简单",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "泡泡是薄液膜包住空气，表面活性剂降低表面张力并帮助液膜稳定。",
+      "you_might_think": "“水本来就能自己形成稳定泡泡。”",
+      "reality": "纯水很难形成稳定的大泡泡。",
+      "why": "表面活性剂分子在水空气界面排列，使液膜更稳定。",
+      "remember": "洗洁精厉害的地方之一是改变表面张力。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S003",
+        "S039"
+      ],
+      "tags": [
+        "泡泡",
+        "表面张力",
+        "洗洁精"
+      ],
+      "related_concept_ids": [
+        "LB168",
+        "LB170",
+        "LB169",
+        "LB166"
+      ]
+    },
+    {
+      "id": "LB168",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB168",
+      "title": "肥皂为什么能去油？因为它同时“亲水”和“亲油”",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "表面活性剂分子两端性质不同，可以帮助油脂形成微小聚集体并被水带走。",
+      "you_might_think": "“水加热以后就能把油溶掉。”",
+      "reality": "仅靠水很难去掉大量油脂；清洁剂改变了油水界面的相互作用。",
+      "why": "表面活性剂形成胶束，把疏水物包在内部。",
+      "remember": "去油的关键是界面化学。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S016",
+        "S039"
+      ],
+      "tags": [
+        "肥皂",
+        "洗洁精",
+        "胶束"
+      ],
+      "related_concept_ids": [
+        "LB064",
+        "LB167",
+        "LB170",
+        "LB169"
+      ]
+    },
+    {
+      "id": "LB169",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB169",
+      "title": "为什么湿衣服晾起来会干？水分子在不断离开液面",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "蒸发是液体表面分子获得足够能量后进入气相的过程。",
+      "you_might_think": "“水只有加热到100°C才会消失。”",
+      "reality": "室温也会蒸发，只是速度不同。",
+      "why": "温度、湿度、风速、表面积都会影响蒸发速率。",
+      "remember": "蒸发不等于沸腾。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "蒸发",
+        "湿衣服"
+      ],
+      "related_concept_ids": [
+        "LB170",
+        "LB168",
+        "LB167",
+        "LB166"
+      ]
+    },
+    {
+      "id": "LB170",
+      "module": "blindspot",
+      "type": "explanation",
+      "status": "draft_for_editorial_review",
+      "review_status": "editorial_review",
+      "concept_id": "LB170",
+      "title": "冰为什么会让饮料变冷？因为它融化时吸收热量",
+      "domain": "science",
+      "angle": "explanation",
+      "one_line": "冰从固态融化为液态需要吸收潜热，因此可以从饮料带走大量热量。",
+      "you_might_think": "“冰只是比水本身温度低，所以冷。”",
+      "reality": "冰融化过程本身也是吸热过程。",
+      "why": "相变需要能量，这些能量来自周围饮料。",
+      "remember": "冰的厉害之处不只在“低温”，还有“融化吸热”。",
+      "evidence_level": "strong",
+      "risk_level": "low",
+      "audience": [
+        "adult"
+      ],
+      "region": [
+        "global"
+      ],
+      "source_ids": [
+        "S002",
+        "S003"
+      ],
+      "tags": [
+        "冰",
+        "融化",
+        "潜热"
+      ],
+      "related_concept_ids": [
+        "LB154",
+        "LB152",
+        "LB169",
+        "LB168"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfbfa;
+  --surface: #ffffff;
+  --foreground: #18181b;
+  --foreground-muted: #71717a;
+  --border: #e4e4e7;
+  --border-subtle: #f4f4f5;
+  --accent: #18181b;
+  --accent-foreground: #ffffff;
+  --card-radius: 1.125rem;
+  --btn-radius: 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #09090b;
+    --surface: #141416;
+    --foreground: #f4f4f5;
+    --foreground-muted: #a1a1aa;
+    --border: #27272a;
+    --border-subtle: #18181b;
+    --accent: #f4f4f5;
+    --accent-foreground: #09090b;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 移动端安全区域与点击体验优化 */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
+
+.min-touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
