@@ -8,7 +8,8 @@
     "start": "next start -H 0.0.0.0",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "sync-supabase": "node scripts/sync-supabase.js"
   },
   "dependencies": {
     "@libsql/client": "^0.18.0",
